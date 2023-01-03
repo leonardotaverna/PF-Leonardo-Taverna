@@ -1,0 +1,837 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Exo+2:wght@100&display=swap');
+
+  
+
+*{
+    margin: 1px;
+    padding: 1px;
+}
+
+
+/* General */
+
+
+
+body{
+    background-color:#faeee7;
+    font-family: alata,sans-serif;
+    color:#8a4358;
+    text-align: center;
+    height:auto;
+    
+}
+
+/* Header */
+
+header{
+    height: 15vh;
+    border: solid #8a4358;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 2fr auto 2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+
+    "nav logo redes"
+  
+    ;
+    
+}
+
+.logotipo {
+    grid-area: logo;
+    width: auto;
+   
+        
+}
+
+.logo{
+    height: 12vh;
+   
+}
+
+h1{
+    display: none;
+    
+}
+
+
+/* Style the navigation menu */
+
+.navegador{
+    display:none;
+
+}
+
+.topnav {
+    overflow: hidden;
+    position: relative;
+    width:auto;
+    grid-area: nav;
+    height:auto;
+        
+    
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+    display: none;
+    text-align: center;
+    position: fixed;
+    z-index: 1;
+    padding-top:35px;
+    
+     
+}
+
+#myLinks ul{
+    list-style: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+    color:#8a4358;
+    text-decoration: none;
+    display: block;
+       
+}
+
+
+.myLinks__menu{
+    font-size: 0.9em;
+    background-color: #faeee7;
+    transition: font-size 0.5s;
+    border:#ff8ba7 solid 1px;
+  
+}
+
+.myLinks__menu:hover{
+    background-color: #f5c9d3;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+    color:#8a4358;
+    display: block;
+    position: relative;
+    font-size: 25px;
+    left: 0;
+    top: 0;
+    
+}
+
+
+
+#redes{
+    grid-area: redes;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+}
+
+#logoredes{
+    height: 4vh;
+    transition: height 0.5s;
+           
+}
+
+#logoredes:hover{
+    height: 4.5vh;
+       
+}
+
+h2{
+    height: 10vh;
+    font-size:4vh;
+    background-color:#fffffe;
+    margin: 15px 0 5px 0;
+
+        
+}
+
+
+/* index.html */
+
+main{
+    height:82vh;
+    color:#8a4358;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-image: url(../img/galeria/4.jpeg); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}
+
+#descripcion{
+   align-self: end; 
+   font-size: large;
+   background-color: #fffffe;
+      
+}
+
+
+#video{
+    color:#8a4358;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    background-color:#fffffe;
+    
+}
+ 
+
+#video--recomiendan1 iframe{
+    height: 35vh;
+    width:100%;
+     
+}
+
+  
+#video--recomiendan2 iframe{
+    height: 35vh;
+    width:100%;
+ 
+}
+ 
+
+
+/* nosotros.html */
+
+#quienes_somos{
+    display:grid;
+    grid-template-columns: 1fr;
+    height: auto;
+    width: 100%;
+    margin:0;
+    padding:0;
+    justify-items: center;
+                 
+}
+
+#quienes_somos--foto{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    width:90%;
+    margin:0;
+    padding:0;
+              
+}
+
+.quienes_somos--foto--p{
+    width: auto;
+    color:#8a4358;
+    background-color: #fffffe;
+    margin:auto;
+    padding:auto;
+      
+}
+
+
+
+/* productos.html  */
+
+.productos{
+    height:68vh;
+    display:grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    align-items: center;
+    
+   
+    
+}
+
+.productos__nav ul{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3,1fr);
+    
+   
+}
+
+
+.productos__nav ul li{
+   list-style: none;
+   
+          
+}
+
+.productos__nav ul li a{
+    color: #8a4358;
+    text-decoration: none;   
+
+}
+
+.productos__nav ul li a p{
+    background-color:#fffffe;
+    border:solid 1px #8a4358;
+    height: auto;
+    
+}
+
+.productos__nav ul li a:hover{
+    color: #ff8ba7;
+    
+
+}
+
+
+#img__productos{
+    height:12vh;
+    transition: height 0.5s;
+   
+}
+
+#img__productos:hover{
+    height:13vh;
+}
+
+
+
+
+/* galeria.html */
+
+.galeria__header{
+    display:grid;
+}
+
+
+
+.topnav__galeria {
+    overflow: hidden;
+    position: relative;
+    width:auto;
+    grid-area: nav;
+    height:auto;
+   
+    
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav__galeria #myLinks {
+    display: none;
+    text-align: center;
+    position: fixed;
+    z-index: 1;
+    padding-top:35px;
+    
+     
+}
+
+#myLinks ul{
+    list-style: none;
+}
+
+/* Style navigation menu links */
+.topnav__galeria a {
+    color:#8a4358;
+    text-decoration: none;
+    display: block;
+       
+}
+
+
+.myLinks__menu{
+    font-size: 0.9em;
+    background-color: #faeee7;
+    transition: font-size 0.5s;
+    border:#ff8ba7 solid 1px;
+  
+}
+
+.myLinks__menu:hover{
+    background-color: #f5c9d3;
+}
+
+/* Style the hamburger menu */
+.topnav__galeria a.icon {
+    color:#8a4358;
+    display: block;
+    position: relative;
+    font-size: 25px;
+    left: 0;
+    top: 0;
+    
+}
+
+
+#redes__galeria{
+    grid-area: redes;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+   
+    
+    
+}
+
+#logoredes{
+    height: 4vh;
+    transition: height 0.5s;
+           
+}
+
+#logoredes:hover{
+    height: 4.5vh;
+       
+}
+
+
+
+/* main galeria.html */
+
+.w3-row-padding{
+    height:auto;
+}
+
+.w3-fourth{
+    transition: height 0.7s, width 0.7s;
+    
+}
+
+.w3-fourth:hover{
+    height:fit-content;
+    width:fit-content;
+    height:65vh;
+    width:125%;
+}
+
+.footer__galeria{
+    display:grid;
+}
+
+
+/* 
+.galeria__productos__fotos{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items:center;
+    
+    
+
+}
+
+#galeria__productos__fotos--img{
+    height:25vh;
+    width:80%;
+    transition: height 0.5s, width 0.5s;
+    
+
+}
+
+#galeria__productos__fotos--img:hover{
+    height: 28vh;
+    width:85%;
+
+}
+
+*/
+
+/* ustedes.html */
+
+.ustedes{
+    height:auto;
+    width:100%;
+    display:grid;
+    grid-template-columns: 1fr;
+    margin:0;
+    padding:0;
+}
+
+#ustedes__fotos img{
+    width:auto;
+    height:auto;
+    
+}
+
+
+
+
+
+
+/* contacto.html */
+
+.contacto{
+    height:70vh;
+    margin:0;
+    padding:0;
+
+}
+
+
+form{
+    display:flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    height:70vh;
+   
+    
+    
+}
+
+#formulario__contacto label{
+    background-color: #fffffe;
+
+}
+
+#mensaje{
+    width:100%;
+   
+}
+
+form input{
+    background-color:#f7c8d3;
+   
+}
+
+#boton_enviar{
+    height:6vh;
+    width:12em;
+    
+
+}
+
+#boton_enviar:hover{
+    background-color: #ff8ba7;
+    cursor: pointer;
+    
+
+}
+
+
+
+
+
+/* Footer general  */
+
+footer{
+    background-color: rgb(168, 200, 201);
+    color:#13591A; 
+    font-size: small;
+    border: solid rgb(168, 200, 201);
+    display:grid;
+    align-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 4fr;
+    grid-template-areas: 
+    
+    "p p p p"
+    ". nav redes ."
+    
+    ;      
+}
+
+#texto__footer{
+    grid-area: p;
+    height:auto;
+}
+
+#seguinosredes{
+    grid-area: redes;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    
+}
+
+#seguinosredes a img{
+    height:5vh;
+
+}
+
+#footer_navegador{
+    grid-area: nav;
+   
+} 
+
+#footer_navegador ul li{
+    list-style: none;
+                  
+}    
+
+#footer_navegador ul li a{
+    color:#13591A;
+                  
+}    
+
+#footer_navegador ul li a:hover{
+    color: lightseagreen;
+    cursor: pointer;
+    
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+
+    /* General */
+
+    /* Header */
+
+
+    header{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+
+   
+
+    .logotipo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 40%;
+    }
+    
+    .logo{
+       
+        padding: 10px;
+                  
+    }
+    
+    h1{
+        text-align: center;
+        font-size:25px;
+        display:inline-block;
+        
+    }
+    
+    .topnav{
+        display:none;
+    }
+
+    .navegador{
+        display:inline-block;
+        list-style: none;
+        text-align:right;
+        width:auto;
+               
+    }    
+    
+    .navegador ul li{
+        display: inline-block;
+        font-size: 15px;
+            
+    }
+
+    .navegador ul li a{
+        text-decoration: none;
+        color: #8a4358;
+            
+    }
+
+    .menu_links:hover{
+        color: #ff8ba7;
+
+    }
+        
+    
+    #redes{
+        width: auto;
+        flex-direction: row;
+        
+    }
+    
+   
+    /* index.html */
+
+    main{
+        height:82vh;
+        display: flex;
+               
+    }
+    
+        
+    .foto_main{
+        width: auto;
+        height: 20vh;
+             
+    }
+
+    #video{
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        height: auto;
+               
+    }
+     
+    
+    #video--recomiendan1 iframe{
+        height: 50vh;
+        width:100%;
+         
+    }
+    
+      
+    #video--recomiendan2 iframe{
+        height: 50vh;
+        width:100%;
+     
+    }
+
+
+    /* nosotros.html */
+
+    #quienes_somos--foto{
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        width: 90%;
+        
+        
+    }
+    
+    .foto_quienes{
+       width: 50%;
+       transform: none;
+    }
+    
+    .quienes_somos--foto--p{
+        width: 100%;
+        margin: auto;
+        color:#8a4358;
+        
+    }
+
+
+
+    /* productos.html */
+
+    .productos__nav ul li a p{
+        width:100%;
+    }
+
+    .productos__nav ul{
+        justify-items: center;
+    }
+
+
+
+    /* galeria.html */
+
+    .galeria__header{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+
+       
+    .topnav__galeria{
+        display:none;
+    }
+
+    #redes__galeria{
+        width: auto;
+        flex-direction: row;
+        
+    }
+
+    .w3-row-padding{
+        display:grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    
+    /* .galeria{ 
+        justify-content:center;
+    }
+    
+        
+    .galeria__productos__fotos{
+        display:grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items:center;
+        align-items:center;
+        
+    }
+    */
+
+    /* ustedes.html */
+
+    #ustedes__fotos img{
+        width:auto;
+        height:auto;
+    }
+
+
+    /* contacto.html */
+
+    .contacto{
+        justify-content: center;
+    }
+
+    
+}
+
+
+
+
+
+
+@media screen and (min-width: 1024px) {
+
+      
+    /* index */
+
+        
+    #video{
+        display: flex;
+        width: auto;
+        height: 100vh;
+    
+    }
+
+    #video--recomiendan1{
+        height: 70vh;
+        width: 50%;
+        padding: 10px;
+    }
+
+    #video--recomiendan2{
+        height: 70vh;
+        width: 50%;
+        padding: 10px;
+    }
+
+
+
+    /* nosotros */
+    
+    #quienes_somos--foto{
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        width: 45%;
+           
+    }
+    
+    .foto_quienes{
+       width: 50%;
+       transform: none;
+    }
+    
+    .quienes_somos--foto--p{
+        width: 50%;
+        margin: auto;
+    }
+
+}
+
+
+
