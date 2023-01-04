@@ -392,16 +392,10 @@ main{
     height:auto;
 }
 
-.w3-fourth{
-    transition: height 0.7s, width 0.7s;
-    
-}
 
 .w3-fourth:hover{
-    height:fit-content;
-    width:fit-content;
-    height:65vh;
-    width:125%;
+    width: 105%;
+  
 }
 
 .footer__galeria{
