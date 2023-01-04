@@ -52,6 +52,7 @@ header{
 
 h1{
     display: none;
+    color:#8a4358;
     
 }
 
@@ -154,6 +155,16 @@ h2{
 
 /* index.html */
 
+.index_body{
+    background-color:#faeee7;
+    font-family: alata,sans-serif;
+    color:#8a4358;
+    text-align: center;
+    height:auto;
+    
+}
+
+
 main{
     height:82vh;
     color:#8a4358;
@@ -164,6 +175,9 @@ main{
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    border: solid black;
+   
+    
     
 }
 
@@ -171,6 +185,7 @@ main{
    align-self: end; 
    font-size: large;
    background-color: #fffffe;
+   border: solid black;
       
 }
 
