@@ -66,7 +66,6 @@ h1{
 /* Style the navigation menu */
 
 .container-fluid{
-    background-color:#faeee7;
     height:10vh;
     z-index: 1;
 }
@@ -76,16 +75,16 @@ h1{
     
 }
 
-.navbar-toggler{
-    padding: 15px;
-}
-
-.collapse{
-    margin: 20px;
-}
-
 .nav-item a{
     color:#8a4358;
+    text-align:left;
+    font-size: 15px;
+    transition: font-size 0.5s;
+}
+
+.nav-item a:hover{
+    font-size: 16px;
+    color:#ff8ba7;
 }
 
 /*  
