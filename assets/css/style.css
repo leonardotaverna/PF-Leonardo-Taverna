@@ -27,10 +27,11 @@ header{
     height: 15vh;
     border: solid #8a4358;
     display: grid;
-    align-items: center;
+    justify-items: center;
     grid-template-columns: 2fr auto 2fr;
     grid-template-rows: 1fr;
     grid-template-areas: 
+    
 
     "nav logo redes"
   
@@ -64,26 +65,45 @@ h1{
 
 /* Style the navigation menu */
 
-.navegador{
-    display:none;
-
+.container-fluid{
+    background-color:#faeee7;
+    height:10vh;
+    z-index: 1;
 }
 
-.topnav {
-    overflow: hidden;
-    position: relative;
+.navbar-collapse{
+    background-color:#faeee7;
+    
+}
+
+.navbar-toggler{
+    padding: 15px;
+}
+
+.collapse{
+    margin: 20px;
+}
+
+.nav-item a{
+    color:#8a4358;
+}
+
+/*  
+.navbar {
+
     width:auto;
     grid-area: nav;
-    height:auto;
+
+    justify-content: center;
+    border: solid black;
         
     
 }
 
-/* Hide the links inside the navigation menu (except for logo/home) */
-.topnav #myLinks {
+/* Hide the links inside the navigation menu (except for logo/home)
+.container-fluid {
     display: none;
     text-align: center;
-    position: fixed;
     z-index: 1;
     padding-top:35px;
     
@@ -94,16 +114,15 @@ h1{
     list-style: none;
 }
 
-/* Style navigation menu links */
-.topnav a {
+/* Style navigation menu links 
+.nav-link {
     color:#8a4358;
-    text-decoration: none;
     display: block;
        
 }
 
 
-.myLinks__menu{
+.nav-item{
     font-size: 0.9em;
     background-color: #faeee7;
     transition: font-size 0.5s;
@@ -111,11 +130,11 @@ h1{
   
 }
 
-.myLinks__menu:hover{
+.nav-item:hover{
     background-color: #f5c9d3;
 }
 
-/* Style the hamburger menu */
+/* Style the hamburger menu 
 .topnav a.icon {
     color:#8a4358;
     display: block;
@@ -126,13 +145,16 @@ h1{
     
 }
 
-
+*/
 
 #redes{
     grid-area: redes;
     display:flex;
     flex-direction: column;
     justify-content: center;
+    width: 25%;
+    align-self: center;
+    
     
     
 }
