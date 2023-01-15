@@ -1,19 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Alata&family=Exo+2:wght@100&display=swap");
-/* Variables */
 * {
   margin: 1px;
   padding: 1px;
 }
 
 /* General */
-body {
-  background-color: #faeee7;
-  font-family: alata, sans-serif;
-  color: #8a4358;
-  text-align: center;
-  height: auto;
-}
-
 /* Header */
 header {
   height: 15vh;
@@ -24,57 +15,42 @@ header {
   grid-template-rows: 1fr;
   grid-template-areas: "nav logo redes";
 }
-
-.logotipo {
+header .logotipo {
   grid-area: logo;
   width: auto;
 }
-
-.logo {
+header .logo {
   height: 12vh;
   transition: 0.5s;
 }
-
-.logo:hover {
+header .logo:hover {
   height: 13vh;
 }
-
-h1 {
+header h1 {
   display: none;
   color: #8a4358;
 }
-
-h2 {
-  background-color: #fffffe;
-}
-
-/* Style the navigation menu */
-.container-fluid {
+header .container-fluid {
   height: 10vh;
   z-index: 1;
   grid-area: nav;
   display: block;
   gap: 30px;
 }
-
-.navbar-collapse {
+header .navbar-collapse {
   background-color: #faeee7;
 }
-
-.nav-item a {
+header .nav-item a {
   color: #8a4358;
   text-align: left;
   font-size: 15px;
   transition: font-size 0.5s;
 }
-
-.nav-item a:hover {
+header .nav-item a:hover {
   font-size: 16px;
   color: #ff8ba7;
 }
-
-/* Style the redes menu */
-#redes {
+header #redes {
   grid-area: redes;
   display: flex;
   flex-direction: column;
@@ -82,13 +58,11 @@ h2 {
   width: 25%;
   align-self: center;
 }
-
-#logoredes {
+header #logoredes {
   height: 4vh;
   transition: height 0.5s;
 }
-
-#logoredes:hover {
+header #logoredes:hover {
   height: 4.5vh;
 }
 
@@ -96,11 +70,12 @@ h2 {
   height: 10vh;
   font-size: 4vh;
   margin: 15px 0 5px 0;
+  background-color: #fffffe;
 }
 
 /* Footer */
 footer {
-  background-color: rgb(168, 200, 201);
+  background-color: #a8c8c9;
   color: #13591A;
   font-size: small;
   display: grid;
@@ -109,38 +84,31 @@ footer {
   grid-template-rows: 1fr 4fr;
   grid-template-areas: "p p p p" ". nav redes .";
 }
-
-#texto__footer {
+footer #texto__footer {
   grid-area: p;
   height: auto;
 }
-
-#seguinosredes {
+footer #footer_navegador {
+  grid-area: nav;
+}
+footer #footer_navegador ul li {
+  list-style: none;
+}
+footer #footer_navegador ul li a {
+  color: #13591A;
+}
+footer #footer_navegador ul li a:hover {
+  color: lightseagreen;
+  cursor: pointer;
+}
+footer #seguinosredes {
   grid-area: redes;
   display: flex;
   flex-direction: column;
   height: auto;
 }
-
-#seguinosredes a img {
+footer #seguinosredes a img {
   height: 5vh;
-}
-
-#footer_navegador {
-  grid-area: nav;
-}
-
-#footer_navegador ul li {
-  list-style: none;
-}
-
-#footer_navegador ul li a {
-  color: #13591A;
-}
-
-#footer_navegador ul li a:hover {
-  color: lightseagreen;
-  cursor: pointer;
 }
 
 /* index.html */
@@ -163,26 +131,23 @@ main {
   background-size: cover;
   position: relative;
 }
-
-.carousel {
+main .carousel {
   height: 0vh;
   width: 100%;
 }
-
-.carousel-item {
+main .carousel .carousel-item {
   height: 58vh;
   width: 100%;
   padding: 0;
   margin: 0;
 }
-
-#descripcion {
+main #descripcion {
   align-self: end;
   font-size: large;
   background-color: #fffffe;
 }
 
-#video {
+#Nos_recomiendan #video {
   color: #8a4358;
   display: flex;
   flex-direction: column;
@@ -190,13 +155,11 @@ main {
   height: auto;
   background-color: #fffffe;
 }
-
-#video--recomiendan1 iframe {
+#Nos_recomiendan #video #video--recomiendan1 iframe {
   height: 35vh;
   width: 100%;
 }
-
-#video--recomiendan2 iframe {
+#Nos_recomiendan #video #video--recomiendan2 iframe {
   height: 35vh;
   width: 100%;
 }

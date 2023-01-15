@@ -1,13 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Alata&family=Exo+2:wght@100&display=swap');
 
-/* Variables */
 $color-fuente: #8a4358;
 $background-body: #faeee7;
 $background-titulos:#fffffe;
 $hover-nav: #ff8ba7;
 $h2-height:10vh;
 $h2-fontsize:4vh;
-
   
 
 *{
@@ -17,14 +15,6 @@ $h2-fontsize:4vh;
 
 
 /* General */
-body{
-    background-color:$background-body;
-    font-family: alata,sans-serif;
-    color:$color-fuente;
-    text-align: center;
-    height:auto;
-}
-
 
 /* Header */
 header{
@@ -37,92 +27,79 @@ header{
     grid-template-areas: 
     "nav logo redes"
     ;
-}
 
-.logotipo {
-    grid-area: logo;
-    width: auto;
-   
-}
-
-.logo{
-    height: 12vh;   
-    transition: 0.5s;
-   
-}
-
-.logo:hover{
-    height: 13vh;
-
-}
-
-h1{
-    display: none;
-    color:$color-fuente;
+    .logotipo {
+        grid-area: logo;
+        width: auto;
+    }
     
-}
-
-h2{
-    background-color: $background-titulos;
-}
-
-/* Style the navigation menu */
-.container-fluid{
-    height:10vh;
-    z-index: 1;
-    grid-area: nav;
-    display:block;
-    gap: 30px;
-
-}
-
-.navbar-collapse{
-    background-color:$background-body;
+    .logo{
+        height: 12vh;   
+        transition: 0.5s;
+        &:hover{
+            height: 13vh;
+        }
+    }
     
+    h1{
+        display: none;
+        color:$color-fuente;
+    }
+
+    .container-fluid{
+        height:10vh;
+        z-index: 1;
+        grid-area: nav;
+        display:block;
+        gap: 30px;
+    }
+
+    .navbar-collapse{
+        background-color:$background-body; 
+    }
+
+    .nav-item a{
+        color:$color-fuente;
+        text-align:left;
+        font-size: 15px;
+        transition: font-size 0.5s;
+        &:hover{
+            font-size: 16px;
+            color:$hover-nav;
+        }
+    }
+
+    #redes{
+        grid-area: redes;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 25%;
+        align-self: center;
+    }
+
+    #logoredes{
+        height: 4vh;
+        transition: height 0.5s; 
+        &:hover{
+            height: 4.5vh;
+        }        
+    }
+
 }
 
-.nav-item a{
-    color:$color-fuente;
-    text-align:left;
-    font-size: 15px;
-    transition: font-size 0.5s;
-}
-
-.nav-item a:hover{
-    font-size: 16px;
-    color:$hover-nav;
-}
-
-
-/* Style the redes menu */
-#redes{
-    grid-area: redes;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 25%;
-    align-self: center;
-}
-
-#logoredes{
-    height: 4vh;
-    transition: height 0.5s;         
-}
-
-#logoredes:hover{
-    height: 4.5vh;
-}
 
 h2{
     height:$h2-height;
     font-size:$h2-fontsize;
-    margin: 15px 0 5px 0;    
+    margin: 15px 0 5px 0;   
+    background-color: $background-titulos; 
 }
 
 
 /* Footer */
 footer{
-    background-color: rgb(168, 200, 201);
+    background-color: #a8c8c9;
     color:#13591A; 
     font-size: small;
     display:grid;
@@ -132,40 +109,36 @@ footer{
     grid-template-areas: 
     "p p p p"
     ". nav redes ."    
-    ;      
-}
-
-#texto__footer{
-    grid-area: p;
-    height:auto;
-}
-
-#seguinosredes{
-    grid-area: redes;
-    display: flex;
-    flex-direction: column;
-    height: auto;
-}
-
-#seguinosredes a img{
-    height:5vh;
-}
-
-#footer_navegador{
-    grid-area: nav;
-} 
-
-#footer_navegador ul li{
-    list-style: none;             
-}    
-
-#footer_navegador ul li a{
-    color:#13591A;         
-}    
-
-#footer_navegador ul li a:hover{
-    color: lightseagreen;
-    cursor: pointer;
+    ;  
+    
+    #texto__footer{
+        grid-area: p;
+        height:auto;
+    }
+    
+    #footer_navegador{
+        grid-area: nav;
+        ul li{
+            list-style: none;  
+            a{
+                color:#13591A;  
+                &:hover{
+                    color:lightseagreen;
+                    cursor: pointer;
+                }       
+            }
+        }
+    } 
+    
+    #seguinosredes{
+        grid-area: redes;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        a img{
+            height:5vh;
+        }
+    }
 }
 
 
@@ -190,54 +163,45 @@ main{
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-
-}
-
-.carousel{
-    height:0vh;
-    width: 100%;
+    .carousel{
+        height:0vh;
+        width: 100%;
+        .carousel-item{
+            height:58vh;
+            width: 100%;
+            padding:0;
+            margin:0;   
+        }
+    }
     
-}
-
-.carousel-item{
-    height:58vh;
-    width: 100%;
-    padding:0;
-    margin:0;   
-}
-
-#descripcion{
-   align-self: end; 
-   font-size: large;
-   background-color: $background-titulos;
-      
-}
-
-
-#video{
-    color:$color-fuente;
-    display: flex;
-    flex-direction: column;
-    width: auto;
-    height: auto;
-    background-color:$background-titulos;
     
-}
- 
+    #descripcion{
+       align-self: end; 
+       font-size: large;
+       background-color: $background-titulos;
+          
+    }
 
-#video--recomiendan1 iframe{
-    height: 35vh;
-    width:100%;
-     
-}
-
-  
-#video--recomiendan2 iframe{
-    height: 35vh;
-    width:100%;
- 
 }
 
+#Nos_recomiendan{
+    #video{
+        color:$color-fuente;
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        background-color:$background-titulos;
+        #video--recomiendan1 iframe{
+            height: 35vh;
+            width:100%;
+        }
+        #video--recomiendan2 iframe{
+            height: 35vh;
+            width:100%;
+        }
+    }
+}
 
 /* nosotros.html */
 
