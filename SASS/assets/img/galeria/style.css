@@ -10,28 +10,27 @@
 
 /* General */
 
-
-
 body{
     background-color:#faeee7;
     font-family: alata,sans-serif;
     color:#8a4358;
     text-align: center;
-    height:auto;
-    
+    /* background-image: url(../img/galeria/7.png); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;*/
+  
 }
-
-/* Header */
 
 header{
     height: 15vh;
     border: solid #8a4358;
     display: grid;
-    justify-items: center;
+    align-items: center;
     grid-template-columns: 2fr auto 2fr;
     grid-template-rows: 1fr;
     grid-template-areas: 
-    
 
     "nav logo redes"
   
@@ -47,117 +46,45 @@ header{
 }
 
 .logo{
-    height: 12vh;   
-    transition: 0.5s;
+    height: 12vh;
    
-}
-
-.logo:hover{
-    height: 13vh;
 }
 
 h1{
     display: none;
-    color:#8a4358;
     
 }
 
-
-/* Style the navigation menu */
-
-.container-fluid{
-    height:10vh;
-    z-index: 1;
+#navegador{
     grid-area: nav;
-    display:block;
-    gap: 30px;
+                      
+}    
 
-}
-
-.navbar-collapse{
-    background-color:#faeee7;
-    
-}
-
-.nav-item a{
-    color:#8a4358;
-    text-align:left;
-    font-size: 15px;
-    transition: font-size 0.5s;
-}
-
-.nav-item a:hover{
-    font-size: 16px;
-    color:#ff8ba7;
-}
-
-/*  
-.navbar {
-
-    width:auto;
-    grid-area: nav;
-
-    justify-content: center;
-    border: solid black;
-        
-    
-}
-
-/* Hide the links inside the navigation menu (except for logo/home)
-.container-fluid {
-    display: none;
-    text-align: center;
-    z-index: 1;
-    padding-top:35px;
-    
-     
-}
-
-#myLinks ul{
+#navegador ul li{
     list-style: none;
-}
-
-/* Style navigation menu links 
-.nav-link {
-    color:#8a4358;
-    display: block;
-       
-}
-
-
-.nav-item{
-    font-size: 0.9em;
-    background-color: #faeee7;
-    transition: font-size 0.5s;
-    border:#ff8ba7 solid 1px;
-  
-}
-
-.nav-item:hover{
-    background-color: #f5c9d3;
-}
-
-/* Style the hamburger menu 
-.topnav a.icon {
-    color:#8a4358;
-    display: block;
-    position: relative;
-    font-size: 25px;
-    left: 0;
-    top: 0;
+    font-size: 12px;
     
 }
 
-*/
+#navegador ul li a{
+    color: #8a4358;
+    text-decoration: none;
+    transition: font-size 0.5s;
+           
+}
+
+#navegador ul li a:hover{
+    color: #ff8ba7;
+    font-size: 18px;
+    
+
+}
 
 #redes{
     grid-area: redes;
     display:flex;
     flex-direction: column;
     justify-content: center;
-    width: 25%;
-    align-self: center;
-    
     
     
 }
@@ -185,16 +112,6 @@ h2{
 
 /* index.html */
 
-.index_body{
-    background-color:#faeee7;
-    font-family: alata,sans-serif;
-    color:#8a4358;
-    text-align: center;
-    height:auto;
-    
-}
-
-
 main{
     height:82vh;
     color:#8a4358;
@@ -205,20 +122,7 @@ main{
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-
-}
-
-.carousel{
-    height:60vh;
-    width: 100%;
     
-}
-
-.carousel-item{
-    height:58vh;
-    width: 100%;
-    padding:0;
-    margin:0;   
 }
 
 #descripcion{
@@ -239,6 +143,16 @@ main{
     
 }
  
+/* .carousel-inner{ 
+    height: 70vh;
+    border: solid black;
+    width:100%;
+}
+
+.carousel-item{
+    height:70vh;
+    width:100%;
+}*/
 
 #video--recomiendan1 iframe{
     height: 35vh;
@@ -258,14 +172,8 @@ main{
 /* nosotros.html */
 
 #quienes_somos{
-    display:grid;
-    grid-template-columns: 1fr;
     height: auto;
-    width: 100%;
-    margin:0;
-    padding:0;
-    justify-items: center;
-                 
+              
 }
 
 #quienes_somos--foto{
@@ -273,18 +181,13 @@ main{
     flex-direction: column;
     height: auto;
     align-items: center;
-    width:90%;
-    margin:0;
-    padding:0;
-              
+           
 }
 
 .quienes_somos--foto--p{
-    width: auto;
+    width: 60%;
     color:#8a4358;
     background-color: #fffffe;
-    margin:auto;
-    padding:auto;
       
 }
 
@@ -294,12 +197,8 @@ main{
 
 .productos{
     height:68vh;
-    display:grid;
-    grid-template-columns: 1fr;
-    width: 100%;
-    align-items: center;
-    
-   
+    width:100%;
+    display:inline-block;
     
 }
 
@@ -307,14 +206,12 @@ main{
     display:grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3,1fr);
-    
-   
 }
 
 
 .productos__nav ul li{
    list-style: none;
-   
+     
           
 }
 
@@ -327,13 +224,11 @@ main{
 .productos__nav ul li a p{
     background-color:#fffffe;
     border:solid 1px #8a4358;
-    height: auto;
     
 }
 
 .productos__nav ul li a:hover{
     color: #ff8ba7;
-    
 
 }
 
@@ -353,158 +248,66 @@ main{
 
 /* galeria.html */
 
-.galeria__header{
-    display:grid;
+.galeria{
+    height:auto;
 }
 
+.galeria__productos__fotos{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items:center;
+    
+    
 
+}
 
-.topnav__galeria {
-    overflow: hidden;
-    position: relative;
+#galeria__productos__fotos--img{
+    height:25vh;
     width:auto;
-    grid-area: nav;
-    height:auto;
-   
-    
-}
-
-/* Hide the links inside the navigation menu (except for logo/home) */
-.topnav__galeria #myLinks {
-    display: none;
-    text-align: center;
-    position: fixed;
-    z-index: 1;
-    padding-top:35px;
-    
-     
-}
-
-#myLinks ul{
-    list-style: none;
-}
-
-/* Style navigation menu links */
-.topnav__galeria a {
-    color:#8a4358;
-    text-decoration: none;
-    display: block;
-       
-}
-
-
-.myLinks__menu{
-    font-size: 0.9em;
-    background-color: #faeee7;
-    transition: font-size 0.5s;
-    border:#ff8ba7 solid 1px;
-  
-}
-
-.myLinks__menu:hover{
-    background-color: #f5c9d3;
-}
-
-/* Style the hamburger menu */
-.topnav__galeria a.icon {
-    color:#8a4358;
-    display: block;
-    position: relative;
-    font-size: 25px;
-    left: 0;
-    top: 0;
-    
-}
-
-
-#redes__galeria{
-    grid-area: redes;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-   
-    
-    
-}
-
-#logoredes{
-    height: 4vh;
     transition: height 0.5s;
-           
+    
+
 }
 
-#logoredes:hover{
-    height: 4.5vh;
-       
+#galeria__productos__fotos--img:hover{
+    height: 28vh;
+
 }
 
-
-
-/* main galeria.html */
-
-.w3-row-padding{
-    height:auto;
-}
-
-
-.w3-fourth:hover{
-    width: 105%;
-  
-}
-
-.footer__galeria{
-    display:grid;
-}
 
 
 /* ustedes.html */
 
 .ustedes{
     height:auto;
-    width:100%;
-    display:grid;
-    grid-template-columns: 1fr;
-    margin:0;
-    padding:0;
 }
 
-#ustedes__fotos img{
-    width:auto;
-    height:auto;
-    
-}
 
 
 
 /* contacto.html */
 
 .contacto{
-    height:70vh;
-    margin:0;
-    padding:0;
+    height:auto;
 
 }
 
+#formulario__contacto{
+    height:70vh;
+    
+
+}
 
 form{
     display:flex;
     flex-direction: column;
-    justify-content:space-around;
     align-items: center;
-    height:70vh;
-   
-    
-    
+    align-content: space-around;
 }
 
 #formulario__contacto label{
     background-color: #fffffe;
 
-}
-
-#mensaje{
-    width:100%;
-   
 }
 
 form input{
@@ -593,10 +396,7 @@ footer{
 
 @media screen and (min-width: 768px) {
 
-    /* General */
-
-    /* Header */
-
+    /* general */
 
     header{
         display: flex;
@@ -605,8 +405,6 @@ footer{
         justify-content: space-between;
         
     }
-
-   
 
     .logotipo {
         display: flex;
@@ -628,33 +426,17 @@ footer{
         
     }
     
-    .topnav{
-        display:none;
-    }
-
-    .navegador{
-        display:inline-block;
+    #navegador{
         list-style: none;
         text-align:right;
         width:auto;
                
     }    
     
-    .navegador ul li{
+    #navegador ul li{
         display: inline-block;
         font-size: 15px;
             
-    }
-
-    .navegador ul li a{
-        text-decoration: none;
-        color: #8a4358;
-            
-    }
-
-    .menu_links:hover{
-        color: #ff8ba7;
-
     }
         
     
@@ -665,9 +447,15 @@ footer{
     }
     
    
-    /* index.html */
+    /* index */
 
+    main{
+        height:82vh;
+        display: flex;
+               
+    }
     
+        
     .foto_main{
         width: auto;
         height: 20vh;
@@ -697,13 +485,13 @@ footer{
     }
 
 
-    /* nosotros.html */
+    /* nosotros */
 
     #quienes_somos--foto{
         display: flex;
         flex-direction: row;
         height: auto;
-        width: 90%;
+        width: 45%;
         
         
     }
@@ -714,92 +502,24 @@ footer{
     }
     
     .quienes_somos--foto--p{
-        width: 100%;
+        width: 50%;
         margin: auto;
         color:#8a4358;
         
     }
 
 
-
-    /* productos.html */
-
-    .productos__nav ul li a p{
-        width:100%;
-    }
-
-    .productos__nav ul{
-        justify-items: center;
-    }
-
-
-
-    /* galeria.html */
-
-    .galeria__header{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        
-    }
-
-       
-    .topnav__galeria{
-        display:none;
-    }
-
-    #redes__galeria{
-        width: auto;
-        flex-direction: row;
-        
-    }
-
-    .w3-row-padding{
-        display:grid;
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-    
-    /* .galeria{ 
-        justify-content:center;
-    }
-    
-        
-    .galeria__productos__fotos{
-        display:grid;
-        grid-template-columns: repeat(4, 1fr);
-        justify-items:center;
-        align-items:center;
-        
-    }
-    */
-
-    /* ustedes.html */
-
-    #ustedes__fotos img{
-        width:auto;
-        height:auto;
-    }
-
-
-    /* contacto.html */
-
-    .contacto{
-        justify-content: center;
-    }
-
-    
 }
-
-
-
 
 
 
 @media screen and (min-width: 1024px) {
 
-      
+    /* general */
+
+    
+
+    
     /* index */
 
         
@@ -848,3 +568,129 @@ footer{
 
 
 
+
+
+/* productos.html 
+
+#productos__nav{
+    height:75vh;
+        
+}
+
+#productos__nav--div1{
+    display: inline-block;
+    height: 100%;
+    width: 49%;
+    text-align: center;
+       
+}
+
+#productos__nav--div2{
+    display: inline-block;
+    height: 100%;
+    width: 49%;
+    text-align: center;
+     
+}
+
+
+#productos__nav ul li{
+    display:block;
+    list-style: none;
+    margin:auto;
+    padding:2px;
+       
+}
+
+#productos__nav ul li a{
+    color: #8a4358;
+
+}
+
+#productos__nav ul li a:hover{
+    color: #ff8ba7;
+
+}
+
+
+#img__productos{
+    height:20vh;
+}
+
+
+
+
+/* galeria.html */
+
+
+
+
+/* ustedes.html 
+
+#ustedes__fotos{
+    text-align: center;
+    
+}
+
+
+
+/* contacto.html 
+
+#formulario__contacto{
+    text-align: center;
+    height: 75vh;
+   
+}
+
+
+form input{
+    background-color:#ff8ba7;
+    color:#8a4358;
+
+}
+
+
+/* Footer general 
+
+footer{
+    background-color: rgb(168, 200, 201);
+    text-align:center;
+        
+}
+
+footer p{
+    color:#13591A;
+        
+}
+
+#seguinosredes{
+    display: inline-block;
+    height: 5vh;
+
+}
+
+#seguinosredes a img{
+    height:5vh;
+
+}
+
+#footer_navegador{
+    display: inline-block;
+    color:#13591A;
+    text-align: left;
+          
+} 
+
+#footer_navegador ul li a{
+    color:#13591A;
+    text-align: left;
+           
+}    
+
+#footer_navegador ul li a:hover{
+    color: lightseagreen;
+    cursor: pointer;
+    
+}
+
+*/

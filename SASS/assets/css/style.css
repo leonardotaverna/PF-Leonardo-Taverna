@@ -66,9 +66,9 @@ h1{
 /* Style the navigation menu */
 
 .container-fluid{
+    grid-area: nav;
     height:10vh;
     z-index: 1;
-    grid-area: nav;
     display:block;
     gap: 30px;
 
@@ -178,8 +178,7 @@ h2{
     font-size:4vh;
     background-color:#fffffe;
     margin: 15px 0 5px 0;
-
-        
+  
 }
 
 
@@ -347,9 +346,6 @@ main{
 #img__productos:hover{
     height:13vh;
 }
-
-
-
 
 /* galeria.html */
 
