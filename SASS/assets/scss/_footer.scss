@@ -1,0 +1,43 @@
+/* Footer */
+footer{
+    background-color: #a8c8c9;
+    color:#13591A; 
+    font-size: small;
+    display:grid;
+    align-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 4fr;
+    grid-template-areas: 
+    "p p p p"
+    ". nav redes ."    
+    ;  
+    
+    #texto__footer{
+        grid-area: p;
+        height:auto;
+    }
+    
+    #footer_navegador{
+        grid-area: nav;
+        ul li{
+            list-style: none;  
+            a{
+                color:#13591A;  
+                &:hover{
+                    color:lightseagreen;
+                    cursor: pointer;
+                }       
+            }
+        }
+    } 
+    
+    #seguinosredes{
+        grid-area: redes;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        a img{
+            height:5vh;
+        }
+    }
+}

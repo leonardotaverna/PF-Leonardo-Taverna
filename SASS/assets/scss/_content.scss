@@ -1,0 +1,200 @@
+/* index.html */
+.index_body{
+    background-color:$background-body;
+    font-family: alata,sans-serif;
+    color:$color-fuente;
+    text-align: center;
+    height:auto;
+    
+}
+
+
+main{
+    height:82vh;
+    color:$color-fuente;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-image: url(../img/galeria/4.jpeg); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    .carousel{
+        .carousel-inner{
+            height:65vh;
+            width: 100%;
+            padding:0;
+            margin:0; 
+        }
+    }
+    
+    
+    #descripcion{
+       align-self: end; 
+       font-size: large;
+       background-color: $background-titulos;
+          
+    }
+
+}
+
+#Nos_recomiendan{
+    #video{
+        color:$color-fuente;
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        background-color:$background-titulos;
+        #video--recomiendan1 iframe{
+            height: 35vh;
+            width:100%;
+        }
+        #video--recomiendan2 iframe{
+            height: 35vh;
+            width:100%;
+        }
+    }
+}
+
+/* nosotros.html */
+
+#quienes_somos{
+    display:grid;
+    grid-template-columns: 1fr;
+    height: auto;
+    width: 100%;
+    margin:0;
+    padding:0;
+    justify-items: center;
+    #quienes_somos--foto{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        width:90%;
+        margin:0;
+        padding:0;  
+        .quienes_somos--foto--p{
+            width: auto;
+            color:$color-fuente;
+            background-color: $background-titulos;
+            margin:auto;
+            padding:auto;   
+        }      
+    }
+}
+
+/* productos.html  */
+
+.productos{
+    height:68vh;
+    display:grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    align-items: center;
+    .productos__nav ul{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3,1fr);
+        #img__productos{
+            height:12vh;
+            transition: height 0.5s;
+            &:hover{
+                height:13vh;
+            }
+        }
+        li{
+            list-style: none;
+            a{
+                color: $color-fuente;
+                text-decoration: none;
+                &:hover{
+                    color: $hover-nav;
+                }
+                p{
+                    background-color:$background-titulos;
+                    border:solid 1px $color-fuente;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+/* galeria.html */
+.galeria__header{
+    display:grid;
+    #redes__galeria{
+        grid-area: redes;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        #logoredes{
+            height: 4vh;
+            transition: height 0.5s;
+            &:hover{
+                height: 4.5vh;
+            }
+        }
+    }
+}
+
+
+/* main galeria.html */
+.w3-row-padding{
+    height:auto;
+    .w3-fourth:hover{
+        width: 105%;
+    }
+}
+.footer__galeria{
+    display:grid;
+}
+
+
+/* ustedes.html */
+.ustedes{
+    height:auto;
+    width:100%;
+    display:grid;
+    grid-template-columns: 1fr;
+    margin:0;
+    padding:0;
+    #ustedes__fotos img{
+        width:auto;
+        height:auto; 
+    }
+}
+
+
+/* contacto.html */
+.contacto{
+    height:70vh;
+    margin:0;
+    padding:0;
+    form{
+        display:flex;
+        flex-direction: column;
+        justify-content:space-around;
+        align-items: center;
+        height:70vh;
+        label{
+            background-color: $background-titulos;
+        }
+        #mensaje{
+            width:100%;
+        }
+        input{
+            background-color:#f7c8d3;
+        }
+        #boton_enviar{
+            height:6vh;
+            width:12em;
+            &:hover{
+                background-color: $hover-nav;
+                cursor: pointer;
+            }
+        }
+    }
+}

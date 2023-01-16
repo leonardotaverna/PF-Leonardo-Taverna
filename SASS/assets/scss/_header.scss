@@ -1,0 +1,72 @@
+/* General */
+/* Header */
+header{
+    height: 15vh;
+    border: solid $color-fuente;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 2fr auto 2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "nav logo redes"
+    ;
+
+    .logotipo {
+        grid-area: logo;
+        width: auto;
+    }
+    
+    .logo{
+        height: 12vh;   
+        transition: 0.5s;
+        &:hover{
+            height: 13vh;
+        }
+    }
+    
+    h1{
+        display: none;
+        color:$color-fuente;
+    }
+
+    .container-fluid{
+        height:10vh;
+        z-index: 1;
+        grid-area: nav;
+        display:block;
+        gap: 30px;
+    }
+
+    .navbar-collapse{
+        background-color:$background-body; 
+    }
+
+    .nav-item a{
+        color:$color-fuente;
+        text-align:left;
+        font-size: 15px;
+        transition: font-size 0.5s;
+        &:hover{
+            font-size: 16px;
+            color:$hover-nav;
+        }
+    }
+
+    #redes{
+        grid-area: redes;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 25%;
+        align-self: center;
+    }
+
+    #logoredes{
+        height: 4vh;
+        transition: height 0.5s; 
+        &:hover{
+            height: 4.5vh;
+        }        
+    }
+
+}

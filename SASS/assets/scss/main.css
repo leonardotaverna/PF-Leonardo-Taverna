@@ -4,6 +4,13 @@
   padding: 1px;
 }
 
+h2 {
+  height: 10vh;
+  font-size: 4vh;
+  margin: 15px 0 5px 0;
+  background-color: #fffffe;
+}
+
 /* General */
 /* Header */
 header {
@@ -64,51 +71,6 @@ header #logoredes {
 }
 header #logoredes:hover {
   height: 4.5vh;
-}
-
-h2 {
-  height: 10vh;
-  font-size: 4vh;
-  margin: 15px 0 5px 0;
-  background-color: #fffffe;
-}
-
-/* Footer */
-footer {
-  background-color: #a8c8c9;
-  color: #13591A;
-  font-size: small;
-  display: grid;
-  align-content: center;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr 4fr;
-  grid-template-areas: "p p p p" ". nav redes .";
-}
-footer #texto__footer {
-  grid-area: p;
-  height: auto;
-}
-footer #footer_navegador {
-  grid-area: nav;
-}
-footer #footer_navegador ul li {
-  list-style: none;
-}
-footer #footer_navegador ul li a {
-  color: #13591A;
-}
-footer #footer_navegador ul li a:hover {
-  color: lightseagreen;
-  cursor: pointer;
-}
-footer #seguinosredes {
-  grid-area: redes;
-  display: flex;
-  flex-direction: column;
-  height: auto;
-}
-footer #seguinosredes a img {
-  height: 5vh;
 }
 
 /* index.html */
@@ -296,6 +258,44 @@ main #descripcion {
 .contacto form #boton_enviar:hover {
   background-color: #ff8ba7;
   cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background-color: #a8c8c9;
+  color: #13591A;
+  font-size: small;
+  display: grid;
+  align-content: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 4fr;
+  grid-template-areas: "p p p p" ". nav redes .";
+}
+footer #texto__footer {
+  grid-area: p;
+  height: auto;
+}
+footer #footer_navegador {
+  grid-area: nav;
+}
+footer #footer_navegador ul li {
+  list-style: none;
+}
+footer #footer_navegador ul li a {
+  color: #13591A;
+}
+footer #footer_navegador ul li a:hover {
+  color: lightseagreen;
+  cursor: pointer;
+}
+footer #seguinosredes {
+  grid-area: redes;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+footer #seguinosredes a img {
+  height: 5vh;
 }
 
 @media screen and (min-width: 768px) {
