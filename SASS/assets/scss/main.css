@@ -355,11 +355,11 @@ main #descripcion {
     margin: auto;
   }
   /* productos.html */
-  .productos__nav ul li a p {
-    width: 100%;
-  }
   .productos__nav ul {
     justify-items: center;
+  }
+  .productos__nav ul li a p {
+    width: 100%;
   }
   /* galeria.html */
   .galeria__header {
@@ -367,9 +367,6 @@ main #descripcion {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-  }
-  .topnav__galeria {
-    display: none;
   }
   #redes__galeria {
     width: auto;
@@ -396,12 +393,12 @@ main #descripcion {
     width: auto;
     height: 100vh;
   }
-  #video--recomiendan1 {
+  #video #video--recomiendan1 {
     height: 70vh;
     width: 50%;
     padding: 10px;
   }
-  #video--recomiendan2 {
+  #video #video--recomiendan2 {
     height: 70vh;
     width: 50%;
     padding: 10px;
@@ -411,14 +408,13 @@ main #descripcion {
     display: flex;
     flex-direction: row;
     height: auto;
-    width: 45%;
+    width: 40%;
   }
-  .foto_quienes {
-    width: 50%;
-    transform: none;
+  #quienes_somos--foto .foto_quienes {
+    width: 40%;
   }
-  .quienes_somos--foto--p {
-    width: 50%;
+  #quienes_somos--foto .quienes_somos--foto--p {
+    width: 40%;
     margin: auto;
   }
 }/*# sourceMappingURL=main.css.map */

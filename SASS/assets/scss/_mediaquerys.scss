@@ -47,7 +47,6 @@
     }
     
     /* nosotros.html */
-
     #quienes_somos--foto{
         display: flex;
         flex-direction: row;
@@ -59,37 +58,26 @@
         }
         .quienes_somos--foto--p{
             width: 100%;
-            margin: auto;
-              
+            margin: auto;     
         }
     }
     
     
     /* productos.html */
-
-    .productos__nav ul li a p{
-        width:100%;
-    }
-
     .productos__nav ul{
         justify-items: center;
+        li a p{
+            width:100%;
+        }
     }
-
 
 
     /* galeria.html */
-
     .galeria__header{
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        
-    }
-
-       
-    .topnav__galeria{
-        display:none;
     }
 
     #redes__galeria{
@@ -105,7 +93,6 @@
 
 
     /* ustedes.html */
-
     #ustedes__fotos img{
         width:auto;
         height:auto;
@@ -113,64 +100,44 @@
 
 
     /* contacto.html */
-
     .contacto{
         justify-content: center;
     }
-
-    
 }
-
-
-
-
 
 
 @media screen and (min-width: 1024px) {
 
-      
     /* index */
-
-        
     #video{
         display: flex;
         width: auto;
         height: 100vh;
+        #video--recomiendan1{
+            height: 70vh;
+            width: 50%;
+            padding: 10px;
+        }
+        #video--recomiendan2{
+            height: 70vh;
+            width: 50%;
+            padding: 10px;
+        }
+    }
+
     
-    }
-
-    #video--recomiendan1{
-        height: 70vh;
-        width: 50%;
-        padding: 10px;
-    }
-
-    #video--recomiendan2{
-        height: 70vh;
-        width: 50%;
-        padding: 10px;
-    }
-
-
-
     /* nosotros */
-    
     #quienes_somos--foto{
         display: flex;
         flex-direction: row;
         height: auto;
-        width: 45%;
-           
+        width: 40%;
+        .foto_quienes{
+            width: 40%;
+        }
+        .quienes_somos--foto--p{
+            width: 40%;
+            margin: auto;
+        }   
     }
-    
-    .foto_quienes{
-       width: 50%;
-       transform: none;
-    }
-    
-    .quienes_somos--foto--p{
-        width: 50%;
-        margin: auto;
-    }
-
 }
