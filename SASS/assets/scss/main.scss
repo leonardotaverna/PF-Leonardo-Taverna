@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Alata&family=Exo+2:wght@100&display=swap');
 
+
 $color-fuente: #8a4358;
 $background-body: #faeee7;
 $background-titulos:#fffffe;
@@ -344,3 +345,5 @@ main{
         }
     }
 }
+
+@import '_mediaquerys';

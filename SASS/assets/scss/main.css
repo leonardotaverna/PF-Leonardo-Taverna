@@ -296,4 +296,129 @@ main #descripcion {
 .contacto form #boton_enviar:hover {
   background-color: #ff8ba7;
   cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  /* General */
+  /* Header */
+  header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header .logotipo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 40%;
+  }
+  header .logotipo .logo {
+    padding: 10px;
+  }
+  header .logotipo h1 {
+    text-align: center;
+    font-size: 25px;
+    display: inline-block;
+  }
+  header #redes {
+    width: auto;
+    flex-direction: row;
+  }
+  #Nos_recomiendan #video {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+  }
+  #Nos_recomiendan #video #video--recomiendan1 iframe {
+    height: 50vh;
+    width: 100%;
+  }
+  #Nos_recomiendan #video #video--recomiendan2 iframe {
+    height: 50vh;
+    width: 100%;
+  }
+  /* nosotros.html */
+  #quienes_somos--foto {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: 90%;
+  }
+  #quienes_somos--foto .foto_quienes {
+    width: 50%;
+    transform: none;
+  }
+  #quienes_somos--foto .quienes_somos--foto--p {
+    width: 100%;
+    margin: auto;
+  }
+  /* productos.html */
+  .productos__nav ul li a p {
+    width: 100%;
+  }
+  .productos__nav ul {
+    justify-items: center;
+  }
+  /* galeria.html */
+  .galeria__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .topnav__galeria {
+    display: none;
+  }
+  #redes__galeria {
+    width: auto;
+    flex-direction: row;
+  }
+  .w3-row-padding {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  /* ustedes.html */
+  #ustedes__fotos img {
+    width: auto;
+    height: auto;
+  }
+  /* contacto.html */
+  .contacto {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* index */
+  #video {
+    display: flex;
+    width: auto;
+    height: 100vh;
+  }
+  #video--recomiendan1 {
+    height: 70vh;
+    width: 50%;
+    padding: 10px;
+  }
+  #video--recomiendan2 {
+    height: 70vh;
+    width: 50%;
+    padding: 10px;
+  }
+  /* nosotros */
+  #quienes_somos--foto {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: 45%;
+  }
+  .foto_quienes {
+    width: 50%;
+    transform: none;
+  }
+  .quienes_somos--foto--p {
+    width: 50%;
+    margin: auto;
+  }
 }/*# sourceMappingURL=main.css.map */
