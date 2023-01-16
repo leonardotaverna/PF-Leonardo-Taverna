@@ -131,12 +131,8 @@ main {
   background-size: cover;
   position: relative;
 }
-main .carousel {
-  height: 0vh;
-  width: 100%;
-}
-main .carousel .carousel-item {
-  height: 58vh;
+main .carousel .carousel-inner {
+  height: 65vh;
   width: 100%;
   padding: 0;
   margin: 0;
@@ -174,8 +170,7 @@ main #descripcion {
   padding: 0;
   justify-items: center;
 }
-
-#quienes_somos--foto {
+#quienes_somos #quienes_somos--foto {
   display: flex;
   flex-direction: column;
   height: auto;
@@ -184,8 +179,7 @@ main #descripcion {
   margin: 0;
   padding: 0;
 }
-
-.quienes_somos--foto--p {
+#quienes_somos #quienes_somos--foto .quienes_somos--foto--p {
   width: auto;
   color: #8a4358;
   background-color: #fffffe;
@@ -201,59 +195,49 @@ main #descripcion {
   width: 100%;
   align-items: center;
 }
-
-.productos__nav ul {
+.productos .productos__nav ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(3, 1fr);
 }
-
-.productos__nav ul li {
-  list-style: none;
-}
-
-.productos__nav ul li a {
-  color: #8a4358;
-  text-decoration: none;
-}
-
-.productos__nav ul li a p {
-  background-color: #fffffe;
-  border: solid 1px #8a4358;
-  height: auto;
-}
-
-.productos__nav ul li a:hover {
-  color: #ff8ba7;
-}
-
-#img__productos {
+.productos .productos__nav ul #img__productos {
   height: 12vh;
   transition: height 0.5s;
 }
-
-#img__productos:hover {
+.productos .productos__nav ul #img__productos:hover {
   height: 13vh;
+}
+.productos .productos__nav ul li {
+  list-style: none;
+}
+.productos .productos__nav ul li a {
+  color: #8a4358;
+  text-decoration: none;
+}
+.productos .productos__nav ul li a:hover {
+  color: #ff8ba7;
+}
+.productos .productos__nav ul li a p {
+  background-color: #fffffe;
+  border: solid 1px #8a4358;
+  height: auto;
 }
 
 /* galeria.html */
 .galeria__header {
   display: grid;
 }
-
-#redes__galeria {
+.galeria__header #redes__galeria {
   grid-area: redes;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
-#logoredes {
+.galeria__header #redes__galeria #logoredes {
   height: 4vh;
   transition: height 0.5s;
 }
-
-#logoredes:hover {
+.galeria__header #redes__galeria #logoredes:hover {
   height: 4.5vh;
 }
 
@@ -261,8 +245,7 @@ main #descripcion {
 .w3-row-padding {
   height: auto;
 }
-
-.w3-fourth:hover {
+.w3-row-padding .w3-fourth:hover {
   width: 105%;
 }
 
@@ -279,8 +262,7 @@ main #descripcion {
   margin: 0;
   padding: 0;
 }
-
-#ustedes__fotos img {
+.ustedes #ustedes__fotos img {
   width: auto;
   height: auto;
 }
@@ -291,33 +273,27 @@ main #descripcion {
   margin: 0;
   padding: 0;
 }
-
-form {
+.contacto form {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   height: 70vh;
 }
-
-#formulario__contacto label {
+.contacto form label {
   background-color: #fffffe;
 }
-
-#mensaje {
+.contacto form #mensaje {
   width: 100%;
 }
-
-form input {
+.contacto form input {
   background-color: #f7c8d3;
 }
-
-#boton_enviar {
+.contacto form #boton_enviar {
   height: 6vh;
   width: 12em;
 }
-
-#boton_enviar:hover {
+.contacto form #boton_enviar:hover {
   background-color: #ff8ba7;
   cursor: pointer;
 }/*# sourceMappingURL=main.css.map */

@@ -164,13 +164,11 @@ main{
     background-size: cover;
     position: relative;
     .carousel{
-        height:0vh;
-        width: 100%;
-        .carousel-item{
-            height:58vh;
+        .carousel-inner{
+            height:65vh;
             width: 100%;
             padding:0;
-            margin:0;   
+            margin:0; 
         }
     }
     
@@ -213,29 +211,23 @@ main{
     margin:0;
     padding:0;
     justify-items: center;
-                 
+    #quienes_somos--foto{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        width:90%;
+        margin:0;
+        padding:0;  
+        .quienes_somos--foto--p{
+            width: auto;
+            color:$color-fuente;
+            background-color: $background-titulos;
+            margin:auto;
+            padding:auto;   
+        }      
+    }
 }
-
-#quienes_somos--foto{
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    align-items: center;
-    width:90%;
-    margin:0;
-    padding:0;
-              
-}
-
-.quienes_somos--foto--p{
-    width: auto;
-    color:$color-fuente;
-    background-color: $background-titulos;
-    margin:auto;
-    padding:auto;
-      
-}
-
 
 /* productos.html  */
 
@@ -245,93 +237,61 @@ main{
     grid-template-columns: 1fr;
     width: 100%;
     align-items: center;
-    
-   
-    
+    .productos__nav ul{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3,1fr);
+        #img__productos{
+            height:12vh;
+            transition: height 0.5s;
+            &:hover{
+                height:13vh;
+            }
+        }
+        li{
+            list-style: none;
+            a{
+                color: $color-fuente;
+                text-decoration: none;
+                &:hover{
+                    color: $hover-nav;
+                }
+                p{
+                    background-color:$background-titulos;
+                    border:solid 1px $color-fuente;
+                    height: auto;
+                }
+            }
+        }
+    }
 }
-
-.productos__nav ul{
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3,1fr);
-    
-   
-}
-
-
-.productos__nav ul li{
-   list-style: none;
-   
-          
-}
-
-.productos__nav ul li a{
-    color: $color-fuente;
-    text-decoration: none;   
-
-}
-
-.productos__nav ul li a p{
-    background-color:$background-titulos;
-    border:solid 1px $color-fuente;
-    height: auto;
-    
-}
-
-.productos__nav ul li a:hover{
-    color: $hover-nav;
-
-}
-
-
-#img__productos{
-    height:12vh;
-    transition: height 0.5s;
-   
-}
-
-#img__productos:hover{
-    height:13vh;
-}
-
 
 /* galeria.html */
 .galeria__header{
     display:grid;
+    #redes__galeria{
+        grid-area: redes;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        #logoredes{
+            height: 4vh;
+            transition: height 0.5s;
+            &:hover{
+                height: 4.5vh;
+            }
+        }
+    }
 }
-
-
-#redes__galeria{
-    grid-area: redes;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-   
-}
-
-#logoredes{
-    height: 4vh;
-    transition: height 0.5s;
-           
-}
-
-#logoredes:hover{
-    height: 4.5vh;
-       
-}
-
 
 
 /* main galeria.html */
 
 .w3-row-padding{
     height:auto;
-}
-
-
-.w3-fourth:hover{
-    width: 105%;
-  
+    .w3-fourth:hover{
+        width: 105%;
+    }
 }
 
 .footer__galeria{
@@ -347,12 +307,10 @@ main{
     grid-template-columns: 1fr;
     margin:0;
     padding:0;
-}
-
-#ustedes__fotos img{
-    width:auto;
-    height:auto;
-   
+    #ustedes__fotos img{
+        width:auto;
+        height:auto; 
+    }
 }
 
 
@@ -361,42 +319,28 @@ main{
     height:70vh;
     margin:0;
     padding:0;
-
-}
-
-
-form{
-    display:flex;
-    flex-direction: column;
-    justify-content:space-around;
-    align-items: center;
-    height:70vh;
-    
-}
-
-#formulario__contacto label{
-    background-color: $background-titulos;
-
-}
-
-#mensaje{
-    width:100%;
-   
-}
-
-form input{
-    background-color:#f7c8d3;
-   
-}
-
-#boton_enviar{
-    height:6vh;
-    width:12em;
-
-}
-
-#boton_enviar:hover{
-    background-color: $hover-nav;
-    cursor: pointer;
-    
+    form{
+        display:flex;
+        flex-direction: column;
+        justify-content:space-around;
+        align-items: center;
+        height:70vh;
+        label{
+            background-color: $background-titulos;
+        }
+        #mensaje{
+            width:100%;
+        }
+        input{
+            background-color:#f7c8d3;
+        }
+        #boton_enviar{
+            height:6vh;
+            width:12em;
+            &:hover{
+                background-color: $hover-nav;
+                cursor: pointer;
+            }
+        }
+    }
 }
