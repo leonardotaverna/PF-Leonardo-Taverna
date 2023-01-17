@@ -1,6 +1,6 @@
 /* index.html */
 .index_body{
-    background-color:$background-body;
+    background-color:map-get($color-fondo,"body");
     font-family: alata,sans-serif;
     color:$color-fuente;
     text-align: center;
@@ -32,7 +32,7 @@ main{
     #descripcion{
        align-self: end; 
        font-size: large;
-       background-color: $background-titulos;
+       background-color:map-get($color-fondo,"titulos");
           
     }
 
@@ -45,7 +45,7 @@ main{
         flex-direction: column;
         width: auto;
         height: auto;
-        background-color:$background-titulos;
+        background-color:map-get($color-fondo,"titulos");
         #video--recomiendan1 iframe{
             height: 35vh;
             width:100%;
@@ -78,7 +78,7 @@ main{
         .quienes_somos--foto--p{
             width: auto;
             color:$color-fuente;
-            background-color: $background-titulos;
+            background-color: map-get($color-fondo,"titulos");
             margin:auto;
             padding:auto;   
         }      
@@ -113,7 +113,7 @@ main{
                     color: $hover-nav;
                 }
                 p{
-                    background-color:$background-titulos;
+                    background-color:map-get($color-fondo,"titulos");
                     border:solid 1px $color-fuente;
                     height: auto;
                 }
@@ -180,7 +180,7 @@ main{
         align-items: center;
         height:70vh;
         label{
-            background-color: $background-titulos;
+            background-color: map-get($color-fondo,"titulos");
         }
         #mensaje{
             width:100%;
