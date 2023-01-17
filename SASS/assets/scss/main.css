@@ -94,7 +94,7 @@ main {
   position: relative;
 }
 main .carousel .carousel-inner {
-  height: 65vh;
+  height: auto;
   width: 100%;
   padding: 0;
   margin: 0;
@@ -388,17 +388,20 @@ footer #seguinosredes a img {
 }
 @media screen and (min-width: 1024px) {
   /* index */
-  #video {
+  main .carousel .carousel-inner {
+    height: 65vh;
+  }
+  main #video {
     display: flex;
     width: auto;
     height: 100vh;
   }
-  #video #video--recomiendan1 {
+  main #video #video--recomiendan1 {
     height: 70vh;
     width: 50%;
     padding: 10px;
   }
-  #video #video--recomiendan2 {
+  main #video #video--recomiendan2 {
     height: 70vh;
     width: 50%;
     padding: 10px;

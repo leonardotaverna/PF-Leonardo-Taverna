@@ -109,22 +109,29 @@
 @media screen and (min-width: 1024px) {
 
     /* index */
-    #video{
-        display: flex;
-        width: auto;
-        height: 100vh;
-        #video--recomiendan1{
-            height: 70vh;
-            width: 50%;
-            padding: 10px;
+    main{
+        .carousel{
+            .carousel-inner{
+                height:65vh; 
+            }
         }
-        #video--recomiendan2{
-            height: 70vh;
-            width: 50%;
-            padding: 10px;
-        }
-    }
 
+        #video{
+            display: flex;
+            width: auto;
+            height: 100vh;
+            #video--recomiendan1{
+                height: 70vh;
+                width: 50%;
+                padding: 10px;
+            }
+            #video--recomiendan2{
+                height: 70vh;
+                width: 50%;
+                padding: 10px;
+            }
+        }   
+    }
     
     /* nosotros */
     #quienes_somos--foto{
