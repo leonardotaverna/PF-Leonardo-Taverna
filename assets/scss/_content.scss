@@ -1,0 +1,202 @@
+@use "_commons" as c;
+
+/* index.html */
+.index_body{
+    background-color:map-get(c.$color-fondo,"body");
+    font-family: alata,sans-serif;
+    color:c.$color-fuente;
+    text-align: center;
+    height:auto;
+    
+}
+
+
+main{
+    height:82vh;
+    color:c.$color-fuente;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-image: url(../img/galeria/4.jpeg); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    .carousel{
+        .carousel-inner{
+            height:auto;
+            width: 100%;
+            padding:0;
+            margin:0; 
+        }
+    }
+    
+    
+    #descripcion{
+       align-self: end; 
+       font-size: large;
+       background-color:map-get(c.$color-fondo,"titulos");
+          
+    }
+
+}
+
+#Nos_recomiendan{
+    #video{
+        color:c.$color-fuente;
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        background-color:map-get(c.$color-fondo,"titulos");
+        #video--recomiendan1 iframe{
+            height: 35vh;
+            width:100%;
+        }
+        #video--recomiendan2 iframe{
+            height: 35vh;
+            width:100%;
+        }
+    }
+}
+
+/* nosotros.html */
+
+#quienes_somos{
+    display:grid;
+    grid-template-columns: 1fr;
+    height: auto;
+    width: 100%;
+    margin:0;
+    padding:0;
+    justify-items: center;
+    #quienes_somos--foto{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        width:90%;
+        margin:0;
+        padding:0;  
+        .quienes_somos--foto--p{
+            width: auto;
+            color:c.$color-fuente;
+            background-color: map-get(c.$color-fondo,"titulos");
+            margin:auto;
+            padding:auto;   
+        }      
+    }
+}
+
+/* productos.html  */
+
+.productos{
+    height:68vh;
+    display:grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    align-items: center;
+    .productos__nav ul{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3,1fr);
+        #img__productos{
+            height:12vh;
+            transition: height 0.5s;
+            &:hover{
+                height:13vh;
+            }
+        }
+        li{
+            list-style: none;
+            a{
+                color: c.$color-fuente;
+                text-decoration: none;
+                &:hover{
+                    color: c.$hover-nav;
+                }
+                p{
+                    background-color:map-get(c.$color-fondo,"titulos");
+                    border:solid 1px c.$color-fuente;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+/* galeria.html */
+.galeria__header{
+    display:grid;
+    #redes__galeria{
+        grid-area: redes;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        #logoredes{
+            height: 4vh;
+            transition: height 0.5s;
+            &:hover{
+                height: 4.5vh;
+            }
+        }
+    }
+}
+
+
+/* main galeria.html */
+.w3-row-padding{
+    height:auto;
+    .w3-fourth:hover{
+        width: 105%;
+    }
+}
+.footer__galeria{
+    display:grid;
+}
+
+
+/* ustedes.html */
+.ustedes{
+    height:auto;
+    width:100%;
+    display:grid;
+    grid-template-columns: 1fr;
+    margin:0;
+    padding:0;
+    #ustedes__fotos img{
+        width:auto;
+        height:auto; 
+    }
+}
+
+
+/* contacto.html */
+.contacto{
+    height:70vh;
+    margin:0;
+    padding:0;
+    form{
+        display:flex;
+        flex-direction: column;
+        justify-content:space-around;
+        align-items: center;
+        height:70vh;
+        label{
+            background-color: map-get(c.$color-fondo,"titulos");
+        }
+        #mensaje{
+            width:100%;
+        }
+        input{
+            background-color:#f7c8d3;
+        }
+        #boton_enviar{
+            height:6vh;
+            width:12em;
+            &:hover{
+                background-color: c.$hover-nav;
+                cursor: pointer;
+            }
+        }
+    }
+}

@@ -66,9 +66,9 @@ h1{
 /* Style the navigation menu */
 
 .container-fluid{
+    grid-area: nav;
     height:10vh;
     z-index: 1;
-    grid-area: nav;
     display:block;
     gap: 30px;
 
@@ -178,8 +178,7 @@ h2{
     font-size:4vh;
     background-color:#fffffe;
     margin: 15px 0 5px 0;
-
-        
+  
 }
 
 
@@ -347,9 +346,6 @@ main{
 #img__productos:hover{
     height:13vh;
 }
-
-
-
 
 /* galeria.html */
 
@@ -591,260 +587,7 @@ footer{
 
 
 
-@media screen and (min-width: 768px) {
 
-    /* General */
-
-    /* Header */
-
-
-    header{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        
-    }
-
-   
-
-    .logotipo {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        width: 40%;
-    }
-    
-    .logo{
-       
-        padding: 10px;
-                  
-    }
-    
-    h1{
-        text-align: center;
-        font-size:25px;
-        display:inline-block;
-        
-    }
-    
-    .topnav{
-        display:none;
-    }
-
-    .navegador{
-        display:inline-block;
-        list-style: none;
-        text-align:right;
-        width:auto;
-               
-    }    
-    
-    .navegador ul li{
-        display: inline-block;
-        font-size: 15px;
-            
-    }
-
-    .navegador ul li a{
-        text-decoration: none;
-        color: #8a4358;
-            
-    }
-
-    .menu_links:hover{
-        color: #ff8ba7;
-
-    }
-        
-    
-    #redes{
-        width: auto;
-        flex-direction: row;
-        
-    }
-    
-   
-    /* index.html */
-
-    
-    .foto_main{
-        width: auto;
-        height: 20vh;
-             
-    }
-
-    #video{
-        display: flex;
-        flex-direction: row;
-        width: auto;
-        height: auto;
-               
-    }
-     
-    
-    #video--recomiendan1 iframe{
-        height: 50vh;
-        width:100%;
-         
-    }
-    
-      
-    #video--recomiendan2 iframe{
-        height: 50vh;
-        width:100%;
-     
-    }
-
-
-    /* nosotros.html */
-
-    #quienes_somos--foto{
-        display: flex;
-        flex-direction: row;
-        height: auto;
-        width: 90%;
-        
-        
-    }
-    
-    .foto_quienes{
-       width: 50%;
-       transform: none;
-    }
-    
-    .quienes_somos--foto--p{
-        width: 100%;
-        margin: auto;
-        color:#8a4358;
-        
-    }
-
-
-
-    /* productos.html */
-
-    .productos__nav ul li a p{
-        width:100%;
-    }
-
-    .productos__nav ul{
-        justify-items: center;
-    }
-
-
-
-    /* galeria.html */
-
-    .galeria__header{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        
-    }
-
-       
-    .topnav__galeria{
-        display:none;
-    }
-
-    #redes__galeria{
-        width: auto;
-        flex-direction: row;
-        
-    }
-
-    .w3-row-padding{
-        display:grid;
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-    
-    /* .galeria{ 
-        justify-content:center;
-    }
-    
-        
-    .galeria__productos__fotos{
-        display:grid;
-        grid-template-columns: repeat(4, 1fr);
-        justify-items:center;
-        align-items:center;
-        
-    }
-    */
-
-    /* ustedes.html */
-
-    #ustedes__fotos img{
-        width:auto;
-        height:auto;
-    }
-
-
-    /* contacto.html */
-
-    .contacto{
-        justify-content: center;
-    }
-
-    
-}
-
-
-
-
-
-
-@media screen and (min-width: 1024px) {
-
-      
-    /* index */
-
-        
-    #video{
-        display: flex;
-        width: auto;
-        height: 100vh;
-    
-    }
-
-    #video--recomiendan1{
-        height: 70vh;
-        width: 50%;
-        padding: 10px;
-    }
-
-    #video--recomiendan2{
-        height: 70vh;
-        width: 50%;
-        padding: 10px;
-    }
-
-
-
-    /* nosotros */
-    
-    #quienes_somos--foto{
-        display: flex;
-        flex-direction: row;
-        height: auto;
-        width: 45%;
-           
-    }
-    
-    .foto_quienes{
-       width: 50%;
-       transform: none;
-    }
-    
-    .quienes_somos--foto--p{
-        width: 50%;
-        margin: auto;
-    }
-
-}
 
 
 

@@ -1,0 +1,423 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Exo+2:wght@100&display=swap");
+* {
+  margin: 1px;
+  padding: 1px;
+}
+
+h2 {
+  height: 10vh;
+  font-size: 4vh;
+  margin: 15px 0 5px 0;
+  background-color: #fffffe;
+}
+
+/* General */
+/* Header */
+header {
+  height: 15vh;
+  border: solid #8a4358;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 2fr auto 2fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "nav logo redes";
+}
+header .logotipo {
+  grid-area: logo;
+  width: auto;
+}
+header .logo {
+  height: 12vh;
+  transition: 0.5s;
+}
+header .logo:hover {
+  height: 13vh;
+}
+header h1 {
+  display: none;
+  color: #8a4358;
+}
+header .container-fluid {
+  height: 10vh;
+  z-index: 1;
+  grid-area: nav;
+  display: block;
+  gap: 30px;
+}
+header .navbar-collapse {
+  background-color: #faeee7;
+}
+header .nav-item a {
+  color: #8a4358;
+  text-align: left;
+  font-size: 15px;
+  transition: font-size 0.5s;
+}
+header .nav-item a:hover {
+  font-size: 16px;
+  color: #ff8ba7;
+}
+header #redes {
+  grid-area: redes;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 25%;
+  align-self: center;
+}
+header #logoredes {
+  height: 4vh;
+  transition: height 0.5s;
+}
+header #logoredes:hover {
+  height: 4.5vh;
+}
+
+/* index.html */
+.index_body {
+  background-color: #faeee7;
+  font-family: alata, sans-serif;
+  color: #8a4358;
+  text-align: center;
+  height: auto;
+}
+
+main {
+  height: 82vh;
+  color: #8a4358;
+  display: grid;
+  grid-template-columns: 1fr;
+  background-image: url(../img/galeria/4.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+main .carousel .carousel-inner {
+  height: auto;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+main #descripcion {
+  align-self: end;
+  font-size: large;
+  background-color: #fffffe;
+}
+
+#Nos_recomiendan #video {
+  color: #8a4358;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  background-color: #fffffe;
+}
+#Nos_recomiendan #video #video--recomiendan1 iframe {
+  height: 35vh;
+  width: 100%;
+}
+#Nos_recomiendan #video #video--recomiendan2 iframe {
+  height: 35vh;
+  width: 100%;
+}
+
+/* nosotros.html */
+#quienes_somos {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: auto;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  justify-items: center;
+}
+#quienes_somos #quienes_somos--foto {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  align-items: center;
+  width: 90%;
+  margin: 0;
+  padding: 0;
+}
+#quienes_somos #quienes_somos--foto .quienes_somos--foto--p {
+  width: auto;
+  color: #8a4358;
+  background-color: #fffffe;
+  margin: auto;
+  padding: auto;
+}
+
+/* productos.html  */
+.productos {
+  height: 68vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  align-items: center;
+}
+.productos .productos__nav ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+}
+.productos .productos__nav ul #img__productos {
+  height: 12vh;
+  transition: height 0.5s;
+}
+.productos .productos__nav ul #img__productos:hover {
+  height: 13vh;
+}
+.productos .productos__nav ul li {
+  list-style: none;
+}
+.productos .productos__nav ul li a {
+  color: #8a4358;
+  text-decoration: none;
+}
+.productos .productos__nav ul li a:hover {
+  color: #ff8ba7;
+}
+.productos .productos__nav ul li a p {
+  background-color: #fffffe;
+  border: solid 1px #8a4358;
+  height: auto;
+}
+
+/* galeria.html */
+.galeria__header {
+  display: grid;
+}
+.galeria__header #redes__galeria {
+  grid-area: redes;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.galeria__header #redes__galeria #logoredes {
+  height: 4vh;
+  transition: height 0.5s;
+}
+.galeria__header #redes__galeria #logoredes:hover {
+  height: 4.5vh;
+}
+
+/* main galeria.html */
+.w3-row-padding {
+  height: auto;
+}
+.w3-row-padding .w3-fourth:hover {
+  width: 105%;
+}
+
+.footer__galeria {
+  display: grid;
+}
+
+/* ustedes.html */
+.ustedes {
+  height: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0;
+  padding: 0;
+}
+.ustedes #ustedes__fotos img {
+  width: auto;
+  height: auto;
+}
+
+/* contacto.html */
+.contacto {
+  height: 70vh;
+  margin: 0;
+  padding: 0;
+}
+.contacto form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 70vh;
+}
+.contacto form label {
+  background-color: #fffffe;
+}
+.contacto form #mensaje {
+  width: 100%;
+}
+.contacto form input {
+  background-color: #f7c8d3;
+}
+.contacto form #boton_enviar {
+  height: 6vh;
+  width: 12em;
+}
+.contacto form #boton_enviar:hover {
+  background-color: #ff8ba7;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background-color: #a8c8c9;
+  color: #13591A;
+  font-size: small;
+  display: grid;
+  align-content: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 4fr;
+  grid-template-areas: "p p p p" ". nav redes .";
+}
+footer #texto__footer {
+  grid-area: p;
+  height: auto;
+}
+footer #footer_navegador {
+  grid-area: nav;
+}
+footer #footer_navegador ul li {
+  list-style: none;
+}
+footer #footer_navegador ul li a {
+  color: #13591A;
+}
+footer #footer_navegador ul li a:hover {
+  color: lightseagreen;
+  cursor: pointer;
+}
+footer #seguinosredes {
+  grid-area: redes;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+footer #seguinosredes a img {
+  height: 5vh;
+}
+
+@media screen and (min-width: 768px) {
+  /* General */
+  /* Header */
+  header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header .logotipo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 40%;
+  }
+  header .logotipo .logo {
+    padding: 10px;
+  }
+  header .logotipo h1 {
+    text-align: center;
+    font-size: 25px;
+    display: inline-block;
+  }
+  header #redes {
+    width: auto;
+    flex-direction: row;
+  }
+  #Nos_recomiendan #video {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+  }
+  #Nos_recomiendan #video #video--recomiendan1 iframe {
+    height: 50vh;
+    width: 100%;
+  }
+  #Nos_recomiendan #video #video--recomiendan2 iframe {
+    height: 50vh;
+    width: 100%;
+  }
+  /* nosotros.html */
+  #quienes_somos--foto {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: 90%;
+  }
+  #quienes_somos--foto .foto_quienes {
+    width: 50%;
+    transform: none;
+  }
+  #quienes_somos--foto .quienes_somos--foto--p {
+    width: 100%;
+    margin: auto;
+  }
+  /* productos.html */
+  .productos__nav ul {
+    justify-items: center;
+  }
+  .productos__nav ul li a p {
+    width: 100%;
+  }
+  /* galeria.html */
+  .galeria__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #redes__galeria {
+    width: auto;
+    flex-direction: row;
+  }
+  .w3-row-padding {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  /* ustedes.html */
+  #ustedes__fotos img {
+    width: auto;
+    height: auto;
+  }
+  /* contacto.html */
+  .contacto {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* index */
+  main .carousel .carousel-inner {
+    height: 65vh;
+  }
+  main #video {
+    display: flex;
+    width: auto;
+    height: 100vh;
+  }
+  main #video #video--recomiendan1 {
+    height: 70vh;
+    width: 50%;
+    padding: 10px;
+  }
+  main #video #video--recomiendan2 {
+    height: 70vh;
+    width: 50%;
+    padding: 10px;
+  }
+  /* nosotros */
+  #quienes_somos--foto {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: 40%;
+  }
+  #quienes_somos--foto .foto_quienes {
+    width: 40%;
+  }
+  #quienes_somos--foto .quienes_somos--foto--p {
+    width: 40%;
+    margin: auto;
+  }
+}/*# sourceMappingURL=main.css.map */
