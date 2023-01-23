@@ -88,7 +88,6 @@ main {
   color: #8a4358;
   display: grid;
   grid-template-columns: 1fr;
-  background-image: url(../img/galeria/4.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -332,13 +331,19 @@ footer #seguinosredes a img {
     width: auto;
     height: auto;
   }
+  #Nos_recomiendan #video #video--recomiendan1 {
+    height: 85vh;
+    width: 100%;
+  }
   #Nos_recomiendan #video #video--recomiendan1 iframe {
-    height: 50vh;
+    height: 65%;
+  }
+  #Nos_recomiendan #video #video--recomiendan2 {
+    height: 85vh;
     width: 100%;
   }
   #Nos_recomiendan #video #video--recomiendan2 iframe {
-    height: 50vh;
-    width: 100%;
+    height: 65%;
   }
   /* nosotros.html */
   #quienes_somos--foto {

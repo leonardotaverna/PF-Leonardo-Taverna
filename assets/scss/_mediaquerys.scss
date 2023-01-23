@@ -1,7 +1,6 @@
 @media screen and (min-width: 768px) {
 
     /* General */
-
     /* Header */
     header{
         display: flex;
@@ -31,18 +30,26 @@
         }
     }
 
-    #Nos_recomiendan #video{
-        display: flex;
-        flex-direction: row;
-        width: auto;
-        height: auto; 
-        #video--recomiendan1 iframe{
-            height: 50vh;
-            width:100%;
-        }
-        #video--recomiendan2 iframe{
-            height: 50vh;
-            width:100%;
+    #Nos_recomiendan {
+        #video{
+            display: flex;
+            flex-direction: row;
+            width: auto;
+            height: auto; 
+            #video--recomiendan1{
+                height: 85vh;
+                width:100%;
+                iframe{
+                    height: 65%;
+                }
+            }
+            #video--recomiendan2{
+                height: 85vh;
+                width:100%;
+                iframe{
+                    height: 65%;
+                }
+            }
         }
     }
     
