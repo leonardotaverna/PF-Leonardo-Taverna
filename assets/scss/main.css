@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Alata&family=Exo+2:wght@100&display=swap");
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0 1px;
+  padding: 0 1px;
 }
 
 h2 {
@@ -15,7 +15,7 @@ h2 {
 /* General */
 /* Header */
 header {
-  height: 10vh;
+  height: auto;
   border-bottom: solid #8a4358;
   position: fixed;
   z-index: 1;
@@ -24,6 +24,8 @@ header {
 }
 header .navbar {
   background-color: #faeee7;
+  margin: 0;
+  padding: 0;
 }
 header .navbar .container-fluid {
   gap: 30px;

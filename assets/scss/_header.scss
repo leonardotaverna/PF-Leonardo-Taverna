@@ -3,15 +3,17 @@
 /* General */
 /* Header */
 header{
-    height: 10vh;
+    height: auto;
     border-bottom: solid c.$color-fuente;
     position: fixed;
     z-index: 1;
     width:100%;
     background-color: map-get(c.$color-fondo,"body");
-
+    
     .navbar{
         background-color: map-get(c.$color-fondo,"body");
+        margin:0;
+        padding:0;
         .container-fluid{
             gap: 30px;
             background-color: map-get(c.$color-fondo,"body");
@@ -35,7 +37,7 @@ header{
                     align-self: center;
                 }
             }
-             
+            
             .navbar-collapse{
                 background-color:map-get(c.$color-fondo,"body"); 
                 .nav-item a{
