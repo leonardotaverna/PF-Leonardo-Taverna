@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Alata&family=Exo+2:wght@100&display=swap");
 * {
-  margin: 1px;
-  padding: 1px;
+  margin: 0;
+  padding: 0;
 }
 
 h2 {
@@ -15,63 +15,51 @@ h2 {
 /* General */
 /* Header */
 header {
-  height: 15vh;
-  border: solid #8a4358;
-  display: grid;
-  justify-items: center;
-  grid-template-columns: 2fr auto 2fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "nav logo redes";
-}
-header .logotipo {
-  grid-area: logo;
-  width: auto;
-}
-header .logo {
-  height: 12vh;
-  transition: 0.5s;
-}
-header .logo:hover {
-  height: 13vh;
-}
-header h1 {
-  display: none;
-  color: #8a4358;
-}
-header .container-fluid {
   height: 10vh;
+  border-bottom: solid #8a4358;
+  position: fixed;
   z-index: 1;
-  grid-area: nav;
-  display: block;
-  gap: 30px;
-}
-header .navbar-collapse {
+  width: 100%;
   background-color: #faeee7;
 }
-header .nav-item a {
+header .navbar {
+  background-color: #faeee7;
+}
+header .navbar .container-fluid {
+  gap: 30px;
+  background-color: #faeee7;
+}
+header .navbar .container-fluid .logotipo {
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 75%;
+}
+header .navbar .container-fluid .logotipo .logo {
+  height: 8vh;
+  transition: 0.5s;
+}
+header .navbar .container-fluid .logotipo .logo:hover {
+  height: 9vh;
+}
+header .navbar .container-fluid .logotipo h1 {
+  color: #8a4358;
+  align-self: center;
+}
+header .navbar .container-fluid .navbar-collapse {
+  background-color: #faeee7;
+}
+header .navbar .container-fluid .navbar-collapse .nav-item a {
   color: #8a4358;
   text-align: left;
   font-size: 15px;
   transition: font-size 0.5s;
 }
-header .nav-item a:hover {
+header .navbar .container-fluid .navbar-collapse .nav-item a:hover {
   font-size: 16px;
   color: #ff8ba7;
-}
-header #redes {
-  grid-area: redes;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 25%;
-  align-self: center;
-}
-header #logoredes {
-  height: 4vh;
-  transition: height 0.5s;
-}
-header #logoredes:hover {
-  height: 4.5vh;
 }
 
 /* index.html */
@@ -84,6 +72,7 @@ header #logoredes:hover {
 }
 
 main {
+  padding-top: 15vh;
   height: 82vh;
   color: #8a4358;
   display: grid;

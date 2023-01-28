@@ -3,72 +3,52 @@
 /* General */
 /* Header */
 header{
-    height: 15vh;
-    border: solid c.$color-fuente;
-    display: grid;
-    justify-items: center;
-    grid-template-columns: 2fr auto 2fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: 
-    "nav logo redes"
-    ;
+    height: 10vh;
+    border-bottom: solid c.$color-fuente;
+    position: fixed;
+    z-index: 1;
+    width:100%;
+    background-color: map-get(c.$color-fondo,"body");
 
-    .logotipo {
-        grid-area: logo;
-        width: auto;
-    }
-    
-    .logo{
-        height: 12vh;   
-        transition: 0.5s;
-        &:hover{
-            height: 13vh;
+    .navbar{
+        background-color: map-get(c.$color-fondo,"body");
+        .container-fluid{
+            gap: 30px;
+            background-color: map-get(c.$color-fondo,"body");
+            
+            .logotipo {
+                margin-top:auto;
+                margin-bottom:auto;
+                display:flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                width:75%;
+                .logo{
+                    height: 8vh;   
+                    transition: 0.5s;
+                    &:hover{
+                        height: 9vh;
+                    }
+                }
+                h1{
+                    color:c.$color-fuente;
+                    align-self: center;
+                }
+            }
+             
+            .navbar-collapse{
+                background-color:map-get(c.$color-fondo,"body"); 
+                .nav-item a{
+                    color:c.$color-fuente;
+                    text-align:left;
+                    font-size: 15px;
+                    transition: font-size 0.5s;
+                    &:hover{
+                        font-size: 16px;
+                        color:c.$hover-nav;
+                    }
+                }
+            }
         }
     }
-    
-    h1{
-        display: none;
-        color:c.$color-fuente;
-    }
-
-    .container-fluid{
-        height:10vh;
-        z-index: 1;
-        grid-area: nav;
-        display:block;
-        gap: 30px;
-    }
-
-    .navbar-collapse{
-        background-color:map-get(c.$color-fondo,"body"); 
-    }
-
-    .nav-item a{
-        color:c.$color-fuente;
-        text-align:left;
-        font-size: 15px;
-        transition: font-size 0.5s;
-        &:hover{
-            font-size: 16px;
-            color:c.$hover-nav;
-        }
-    }
-
-    #redes{
-        grid-area: redes;
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 25%;
-        align-self: center;
-    }
-
-    #logoredes{
-        height: 4vh;
-        transition: height 0.5s; 
-        &:hover{
-            height: 4.5vh;
-        }        
-    }
-
 }
