@@ -135,34 +135,34 @@ main{
 
 /* productos.html  */
 .productos{
-    height:68vh;
+    height:auto;
     display:grid;
     grid-template-columns: 1fr;
     width: 100%;
     align-items: center;
     .productos__nav ul{
+        gap: 10px;
         display:grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(3,1fr);
-        #img__productos{
-            height:12vh;
-            transition: height 0.5s;
-            &:hover{
-                height:13vh;
-            }
-        }
+        
         li{
             list-style: none;
+            background-color:#dfeedd;
+            border-radius: 20px;
+            padding-top:30px;
+            #img__productos{
+                height:12vh;
+                transition: height 0.5s;
+                &:hover{
+                    height:13vh;
+                }
+            }
             a{
                 color: c.$color-fuente;
                 text-decoration: none;
                 &:hover{
                     color: c.$hover-nav;
-                }
-                p{
-                    background-color:map-get(c.$color-fondo,"titulos");
-                    border:solid 1px c.$color-fuente;
-                    height: auto;
                 }
             }
         }
@@ -170,29 +170,26 @@ main{
 }
 
 /* galeria.html */
-.galeria__header{
-    display:grid;
-    #redes__galeria{
-        grid-area: redes;
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        #logoredes{
-            height: 4vh;
-            transition: height 0.5s;
-            &:hover{
-                height: 4.5vh;
-            }
-        }
-    }
-}
-
-
 /* main galeria.html */
 .w3-row-padding{
+    border:solid black;
+    display:flex;
     height:auto;
-    .w3-fourth:hover{
-        width: 105%;
+    gap:10px;
+    .w3-fourth{
+        border: soild yellow;
+        opacity:.8;
+        img{
+            border: soild blue;
+            flex-grow: 1;
+            object-fit: cover;
+        }
+        &:hover{
+            width: 105%;
+            opacity:1;
+            filter:contrast(120%);
+            transition:.5s ease;
+        }
     }
 }
 .footer__galeria{
