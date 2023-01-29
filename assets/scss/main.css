@@ -350,29 +350,14 @@ footer #seguinosredes a img {
   /* General */
   /* Header */
   header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    /*.logotipo {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        width: 40%;
-        .logo{
-            padding: 10px; 
-        }
-
-        h1{
-            text-align: center;
-            font-size:25px;
-            display:inline-block;
-        }
-    }*/
+    width: 100%;
   }
-  header #redes {
-    width: auto;
-    flex-direction: row;
+  header .navbar {
+    width: 100%;
+  }
+  header .navbar .container-fluid {
+    justify-content: left;
+    width: 100%;
   }
   #Nos_recomiendan #video {
     display: flex;
@@ -438,6 +423,35 @@ footer #seguinosredes a img {
   }
 }
 @media screen and (min-width: 1024px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  header .navbar {
+    width: 100%;
+  }
+  header .navbar .container-fluid {
+    justify-content: left;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  header .navbar .container-fluid h1 {
+    width: auto;
+  }
+  header .navbar .container-fluid .redes {
+    display: inline-block;
+    width: 25%;
+  }
+  header .navbar .container-fluid .redes a {
+    display: inline;
+    height: auto;
+  }
+  header .navbar .container-fluid .redes a img {
+    height: 4vh;
+  }
   /* index */
   main .carousel .carousel-inner {
     height: 65vh;

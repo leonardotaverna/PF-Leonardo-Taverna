@@ -3,31 +3,14 @@
     /* General */
     /* Header */
     header{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        /*.logotipo {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            width: 40%;
-            .logo{
-                padding: 10px; 
+        width: 100%;
+        .navbar{
+            width: 100%;
+            .container-fluid{
+                justify-content: left;
+                width: 100%;
             }
-            
-            h1{
-                text-align: center;
-                font-size:25px;
-                display:inline-block;
-            }
-        }*/
-
-
-        #redes{
-            width: auto;
-            flex-direction: row;   
-        }
+        }        
     }
 
     #Nos_recomiendan {
@@ -111,6 +94,36 @@
 
 
 @media screen and (min-width: 1024px) {
+    header{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        .navbar{
+            width: 100%;
+            .container-fluid{
+                justify-content: left;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                h1{
+                    width: auto;
+                }
+                .redes{
+                    display:inline-block; 
+                    width:25%; 
+                    a{
+                        display:inline;
+                        height:auto;
+                        img{
+                            height: 4vh;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 
     /* index */
     main{
