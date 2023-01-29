@@ -11,11 +11,12 @@ $h2-fontsize:4vh;
     margin:0 1px;
     padding: 0 1px;
 }
-
-h2{
-    height:$h2-height;
-    font-size:$h2-fontsize;
-    margin: 15px 0 5px 0;   
-    background-color: #fffffe; 
-    padding-top: 15px;
+.titulo{
+    h2{
+        height:$h2-height;
+        font-size:$h2-fontsize;
+        margin: 15px 0 5px 0;   
+        background-color: #fffffe; 
+        padding-top: 15px;
+    }
 }
