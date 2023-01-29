@@ -18,16 +18,20 @@ header {
   height: auto;
   border-bottom: solid #8a4358;
   width: 100%;
-  background-color: #faeee7;
+  background-color: #ffd7e1;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 header .navbar {
-  background-color: #faeee7;
+  background-color: #ffd7e1;
   margin: 0;
   padding: 0;
 }
 header .navbar .container-fluid {
   gap: 30px;
-  background-color: #faeee7;
+  background-color: #ffd7e1;
 }
 header .navbar .container-fluid .logotipo {
   margin-top: auto;
@@ -49,7 +53,7 @@ header .navbar .container-fluid .logotipo h1 {
   align-self: center;
 }
 header .navbar .container-fluid .navbar-collapse {
-  background-color: #faeee7;
+  background-color: #ffd7e1;
 }
 header .navbar .container-fluid .navbar-collapse .nav-item a {
   color: #8a4358;
@@ -78,7 +82,7 @@ header .navbar .container-fluid .redes {
   text-align: right;
   position: -webkit-sticky;
   position: sticky;
-  top: 0;
+  top: 60px;
   z-index: 1;
 }
 .boton-pedidos button {
@@ -146,6 +150,7 @@ main .carousel .carousel-inner {
 }
 main .carousel .carousel-inner .carousel-item img {
   height: 50vh;
+  aspect-ratio: 1/1;
 }
 main #descripcion {
   align-self: end;
@@ -236,20 +241,14 @@ main #descripcion {
 /* galeria.html */
 /* main galeria.html */
 .w3-row-padding {
-  border: solid black;
-  display: flex;
   height: auto;
   gap: 10px;
 }
 .w3-row-padding .w3-fourth {
-  border: soild yellow;
   opacity: 0.8;
 }
 .w3-row-padding .w3-fourth img {
-  border: soild blue;
-  flex-grow: 1;
-  -o-object-fit: cover;
-     object-fit: cover;
+  aspect-ratio: 1/1;
 }
 .w3-row-padding .w3-fourth:hover {
   width: 105%;
@@ -262,18 +261,20 @@ main #descripcion {
   display: grid;
 }
 
-/* ustedes.html */
+/* ustedes.html*/
 .ustedes {
   height: auto;
   width: 100%;
+  padding: 30px;
   display: grid;
   grid-template-columns: 1fr;
-  margin: 0;
-  padding: 0;
+  grid-template-areas: "ustedes";
 }
-.ustedes #ustedes__fotos img {
-  width: auto;
-  height: auto;
+.ustedes .ustedes_ {
+  grid-area: ustedes;
+}
+.ustedes .ustedes_foto img {
+  aspect-ratio: 1/1;
 }
 
 /* contacto.html */
@@ -430,10 +431,6 @@ footer #seguinosredes a img {
     grid-template-columns: repeat(4, 1fr);
   }
   /* ustedes.html */
-  #ustedes__fotos img {
-    width: auto;
-    height: auto;
-  }
   /* contacto.html */
   .contacto {
     justify-content: center;

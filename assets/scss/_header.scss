@@ -6,15 +6,18 @@ header{
     height: auto;
     border-bottom: solid c.$color-fuente;
     width:100%;
-    background-color: map-get(c.$color-fondo,"body");
+    background-color: map-get(c.$color-fondo,"header");
+    position:sticky;
+    top:0;
+    z-index: 1;
     
     .navbar{
-        background-color: map-get(c.$color-fondo,"body");
+        background-color: map-get(c.$color-fondo,"header");
         margin:0;
         padding:0;
         .container-fluid{
             gap: 30px;
-            background-color: map-get(c.$color-fondo,"body");
+            background-color: map-get(c.$color-fondo,"header");
             
             .logotipo {
                 margin-top:auto;
@@ -37,7 +40,7 @@ header{
             }
             
             .navbar-collapse{
-                background-color:map-get(c.$color-fondo,"body"); 
+                background-color:map-get(c.$color-fondo,"header"); 
                 .nav-item a{
                     color:c.$color-fuente;
                     text-align:left;

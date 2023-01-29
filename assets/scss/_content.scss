@@ -13,7 +13,7 @@
     text-align: right;
     position: -webkit-sticky;
     position: sticky;
-    top:0;
+    top: 60px;
     z-index: 1;
     button{
         margin-top:20px;
@@ -72,6 +72,7 @@ main{
             .carousel-item{
                 img{
                     height: 50vh;
+                    aspect-ratio:1/1;
                 }
             }
         }
@@ -80,10 +81,8 @@ main{
     #descripcion{
        align-self: end; 
        font-size: large;
-       background-color:map-get(c.$color-fondo,"titulos");
-          
+       background-color:map-get(c.$color-fondo,"titulos"); 
     }
-
 }
 
 #Nos_recomiendan{
@@ -145,7 +144,6 @@ main{
         display:grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(3,1fr);
-        
         li{
             list-style: none;
             background-color:#dfeedd;
@@ -172,17 +170,12 @@ main{
 /* galeria.html */
 /* main galeria.html */
 .w3-row-padding{
-    border:solid black;
-    display:flex;
     height:auto;
     gap:10px;
     .w3-fourth{
-        border: soild yellow;
         opacity:.8;
         img{
-            border: soild blue;
-            flex-grow: 1;
-            object-fit: cover;
+            aspect-ratio: 1/1;
         }
         &:hover{
             width: 105%;
@@ -197,17 +190,20 @@ main{
 }
 
 
-/* ustedes.html */
+/* ustedes.html*/
 .ustedes{
     height:auto;
     width:100%;
-    display:grid;
+    padding: 30px;
+    display: grid;
     grid-template-columns: 1fr;
-    margin:0;
-    padding:0;
-    #ustedes__fotos img{
-        width:auto;
-        height:auto; 
+    grid-template-areas: 
+    "ustedes";
+    .ustedes_{
+        grid-area: ustedes;
+        &foto img{
+            aspect-ratio: 1/1;
+        }
     }
 }
 
