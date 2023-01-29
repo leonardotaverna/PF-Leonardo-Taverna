@@ -354,20 +354,21 @@ footer #seguinosredes a img {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-  }
-  header .logotipo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 40%;
-  }
-  header .logotipo .logo {
-    padding: 10px;
-  }
-  header .logotipo h1 {
-    text-align: center;
-    font-size: 25px;
-    display: inline-block;
+    /*.logotipo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 40%;
+        .logo{
+            padding: 10px; 
+        }
+
+        h1{
+            text-align: center;
+            font-size:25px;
+            display:inline-block;
+        }
+    }*/
   }
   header #redes {
     width: auto;
