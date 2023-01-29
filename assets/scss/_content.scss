@@ -13,7 +13,7 @@
     text-align: right;
     position: -webkit-sticky;
     position: sticky;
-    top: 60px;
+    top: 45px;
     z-index: 1;
     button{
         margin-top:20px;
@@ -122,8 +122,8 @@ main{
         padding: 15px;
         gap:10px;
         background-color: #dfeedd;
-        border-radius: 12px;
-        .quienes_somos--foto--p{
+        border-radius: 10px 100px / 120px;
+        &--p{
             width: auto;
             color:c.$color-fuente;
             margin:auto;
@@ -138,7 +138,7 @@ main{
     display:grid;
     grid-template-columns: 1fr;
     width: 100%;
-    align-items: center;
+    justify-content: center;
     .productos__nav ul{
         gap: 10px;
         display:grid;
@@ -147,7 +147,7 @@ main{
         li{
             list-style: none;
             background-color:#dfeedd;
-            border-radius: 20px;
+            border-radius: 10px 100px / 120px;
             padding-top:30px;
             #img__productos{
                 height:12vh;
@@ -168,14 +168,14 @@ main{
 }
 
 /* galeria.html */
-/* main galeria.html */
 .w3-row-padding{
     height:auto;
-    gap:10px;
+    gap:20px;
     .w3-fourth{
         opacity:.8;
         img{
             aspect-ratio: 1/1;
+            border-radius: 10px 100px / 120px;
         }
         &:hover{
             width: 105%;
@@ -192,16 +192,16 @@ main{
 
 /* ustedes.html*/
 .ustedes{
-    height:auto;
-    width:100%;
-    padding: 30px;
-    display: grid;
+    display:grid;
     grid-template-columns: 1fr;
-    grid-template-areas: 
-    "ustedes";
+    height: auto;
+    width: 100%;
+    justify-items: center;
+    gap:20px;
+    padding:10px;
     .ustedes_{
-        grid-area: ustedes;
         &foto img{
+            border-radius: 10px 100px / 120px;
             aspect-ratio: 1/1;
         }
     }
@@ -219,6 +219,7 @@ main{
         justify-content:space-around;
         align-items: center;
         height:70vh;
+        padding: 30px;
         label{
             background-color: map-get(c.$color-fondo,"titulos");
         }

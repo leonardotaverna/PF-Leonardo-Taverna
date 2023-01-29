@@ -18,16 +18,16 @@
             display: flex;
             flex-direction: row;
             width: auto;
-            height: auto; 
+            height: 100vh; 
             #video--recomiendan1{
-                height: 85vh;
+                height: auto;
                 width:100%;
                 iframe{
                     height: 65%;
                 }
             }
             #video--recomiendan2{
-                height: 85vh;
+                height: auto;
                 width:100%;
                 iframe{
                     height: 65%;
@@ -51,15 +51,6 @@
             margin: auto;     
         }
     }
-    
-    
-    /* productos.html */
-    .productos__nav ul{
-        justify-items: center;
-        li a p{
-            width:100%;
-        }
-    }
 
 
     /* galeria.html */
@@ -80,11 +71,6 @@
         display:grid;
         grid-template-columns: repeat(4, 1fr);
     }
-
-
-    /* ustedes.html */
-   
-
 
     /* contacto.html */
     .contacto{
@@ -129,7 +115,14 @@
     main{
         .carousel{
             .carousel-inner{
-                height:65vh; 
+                height:100%;
+                .carousel-item{
+                    height:100%;
+                    img{
+                        object-fit:cover;
+                        aspect-ratio:4/3;
+                    } 
+                }
             }
         }
 
@@ -151,17 +144,8 @@
     }
     
     /* nosotros */
-    #quienes_somos--foto{
-        display: flex;
-        flex-direction: row;
-        height: auto;
-        width: 40%;
-        .foto_quienes{
-            width: 40%;
-        }
-        .quienes_somos--foto--p{
-            width: 40%;
-            margin: auto;
-        }   
+    #quienes_somos{
+        grid-template-columns: 1fr 1fr;
     }
+
 }

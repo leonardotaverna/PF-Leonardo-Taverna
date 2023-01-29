@@ -82,7 +82,7 @@ header .navbar .container-fluid .redes {
   text-align: right;
   position: -webkit-sticky;
   position: sticky;
-  top: 60px;
+  top: 45px;
   z-index: 1;
 }
 .boton-pedidos button {
@@ -194,9 +194,9 @@ main #descripcion {
   padding: 15px;
   gap: 10px;
   background-color: #dfeedd;
-  border-radius: 12px;
+  border-radius: 10px 100px/120px;
 }
-#quienes_somos--foto .quienes_somos--foto--p {
+#quienes_somos--foto--p {
   width: auto;
   color: #8a4358;
   margin: auto;
@@ -209,7 +209,7 @@ main #descripcion {
   display: grid;
   grid-template-columns: 1fr;
   width: 100%;
-  align-items: center;
+  justify-content: center;
 }
 .productos .productos__nav ul {
   gap: 10px;
@@ -220,7 +220,7 @@ main #descripcion {
 .productos .productos__nav ul li {
   list-style: none;
   background-color: #dfeedd;
-  border-radius: 20px;
+  border-radius: 10px 100px/120px;
   padding-top: 30px;
 }
 .productos .productos__nav ul li #img__productos {
@@ -239,16 +239,16 @@ main #descripcion {
 }
 
 /* galeria.html */
-/* main galeria.html */
 .w3-row-padding {
   height: auto;
-  gap: 10px;
+  gap: 20px;
 }
 .w3-row-padding .w3-fourth {
   opacity: 0.8;
 }
 .w3-row-padding .w3-fourth img {
   aspect-ratio: 1/1;
+  border-radius: 10px 100px/120px;
 }
 .w3-row-padding .w3-fourth:hover {
   width: 105%;
@@ -263,17 +263,16 @@ main #descripcion {
 
 /* ustedes.html*/
 .ustedes {
-  height: auto;
-  width: 100%;
-  padding: 30px;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-areas: "ustedes";
-}
-.ustedes .ustedes_ {
-  grid-area: ustedes;
+  height: auto;
+  width: 100%;
+  justify-items: center;
+  gap: 20px;
+  padding: 10px;
 }
 .ustedes .ustedes_foto img {
+  border-radius: 10px 100px/120px;
   aspect-ratio: 1/1;
 }
 
@@ -289,6 +288,7 @@ main #descripcion {
   justify-content: space-around;
   align-items: center;
   height: 70vh;
+  padding: 30px;
 }
 .contacto form label {
   background-color: #fffffe;
@@ -363,17 +363,17 @@ footer #seguinosredes a img {
     display: flex;
     flex-direction: row;
     width: auto;
-    height: auto;
+    height: 100vh;
   }
   #Nos_recomiendan #video #video--recomiendan1 {
-    height: 85vh;
+    height: auto;
     width: 100%;
   }
   #Nos_recomiendan #video #video--recomiendan1 iframe {
     height: 65%;
   }
   #Nos_recomiendan #video #video--recomiendan2 {
-    height: 85vh;
+    height: auto;
     width: 100%;
   }
   #Nos_recomiendan #video #video--recomiendan2 iframe {
@@ -394,13 +394,6 @@ footer #seguinosredes a img {
     width: 100%;
     margin: auto;
   }
-  /* productos.html */
-  .productos__nav ul {
-    justify-items: center;
-  }
-  .productos__nav ul li a p {
-    width: 100%;
-  }
   /* galeria.html */
   .galeria__header {
     display: flex;
@@ -416,7 +409,6 @@ footer #seguinosredes a img {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
   }
-  /* ustedes.html */
   /* contacto.html */
   .contacto {
     justify-content: center;
@@ -454,7 +446,15 @@ footer #seguinosredes a img {
   }
   /* index */
   main .carousel .carousel-inner {
-    height: 65vh;
+    height: 100%;
+  }
+  main .carousel .carousel-inner .carousel-item {
+    height: 100%;
+  }
+  main .carousel .carousel-inner .carousel-item img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    aspect-ratio: 4/3;
   }
   main #video {
     display: flex;
@@ -472,17 +472,7 @@ footer #seguinosredes a img {
     padding: 10px;
   }
   /* nosotros */
-  #quienes_somos--foto {
-    display: flex;
-    flex-direction: row;
-    height: auto;
-    width: 40%;
-  }
-  #quienes_somos--foto .foto_quienes {
-    width: 40%;
-  }
-  #quienes_somos--foto .quienes_somos--foto--p {
-    width: 40%;
-    margin: auto;
+  #quienes_somos {
+    grid-template-columns: 1fr 1fr;
   }
 }/*# sourceMappingURL=main.css.map */
