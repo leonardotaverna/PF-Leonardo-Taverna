@@ -16,16 +16,18 @@ header{
         margin:0;
         padding:0;
         .container-fluid{
-            gap: 30px;
+            gap: 10px;
             background-color: map-get(c.$color-fondo,"header");
-            
+            .navbar-toggler{
+                width:15%;
+            }
             .logotipo {
                 margin-top:auto;
                 margin-bottom:auto;
                 display:flex;
                 flex-direction: row;
                 justify-content: space-evenly;
-                width:75%;
+                width:80%;
                 .logo{
                     height: 8vh;   
                     transition: 0.5s;
@@ -36,6 +38,69 @@ header{
                 h1{
                     color:c.$color-fuente;
                     align-self: center;
+                }
+            }
+            
+            .navbar-collapse{
+                background-color:map-get(c.$color-fondo,"header"); 
+                .nav-item a{
+                    color:c.$color-fuente;
+                    text-align:left;
+                    font-size: 15px;
+                    transition: font-size 0.5s;
+                    &:hover{
+                        font-size: 16px;
+                        color:c.$hover-nav;
+                    }
+                }
+            }
+
+            .redes{
+                display:none;
+            }
+        }
+    }
+}
+
+/* Galería */
+header .galeria-header{
+    height: auto;
+    border-bottom: solid c.$color-fuente;
+    width:100%;
+    background-color: map-get(c.$color-fondo,"header");
+    position:sticky;
+    top:0;
+    z-index: 1;
+    
+    .navbar{
+        background-color: map-get(c.$color-fondo,"header");
+        margin:0;
+        padding:0;
+        .container-fluid{
+            gap: 5px;
+            background-color: map-get(c.$color-fondo,"header");
+            .navbar-toggler{
+                width:15%;
+            }
+            .logotipo {
+                margin-top:auto;
+                margin-bottom:auto;
+                display:flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                width:80%;
+                .logo{
+                    height: 8vh;   
+                    transition: 0.5s;
+                    &:hover{
+                        height: 9vh;
+                    }
+                }
+                h1 .galeria-h1{
+                    color:c.$color-fuente;
+                    align-self: center;
+                    font-weight: bold;
+                    font-size: 2px;
                 }
             }
             

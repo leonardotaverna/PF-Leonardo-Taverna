@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Alata&family=Exo+2:wght@100&display=swap");
 * {
   margin: 0 1px;
@@ -30,8 +31,11 @@ header .navbar {
   padding: 0;
 }
 header .navbar .container-fluid {
-  gap: 30px;
+  gap: 10px;
   background-color: #ffd7e1;
+}
+header .navbar .container-fluid .navbar-toggler {
+  width: 15%;
 }
 header .navbar .container-fluid .logotipo {
   margin-top: auto;
@@ -39,7 +43,7 @@ header .navbar .container-fluid .logotipo {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  width: 75%;
+  width: 80%;
 }
 header .navbar .container-fluid .logotipo .logo {
   height: 8vh;
@@ -66,6 +70,67 @@ header .navbar .container-fluid .navbar-collapse .nav-item a:hover {
   color: #ff8ba7;
 }
 header .navbar .container-fluid .redes {
+  display: none;
+}
+
+/* Galería */
+header .galeria-header {
+  height: auto;
+  border-bottom: solid #8a4358;
+  width: 100%;
+  background-color: #ffd7e1;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+header .galeria-header .navbar {
+  background-color: #ffd7e1;
+  margin: 0;
+  padding: 0;
+}
+header .galeria-header .navbar .container-fluid {
+  gap: 5px;
+  background-color: #ffd7e1;
+}
+header .galeria-header .navbar .container-fluid .navbar-toggler {
+  width: 15%;
+}
+header .galeria-header .navbar .container-fluid .logotipo {
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 80%;
+}
+header .galeria-header .navbar .container-fluid .logotipo .logo {
+  height: 8vh;
+  transition: 0.5s;
+}
+header .galeria-header .navbar .container-fluid .logotipo .logo:hover {
+  height: 9vh;
+}
+header .galeria-header .navbar .container-fluid .logotipo h1 .galeria-h1 {
+  color: #8a4358;
+  align-self: center;
+  font-weight: bold;
+  font-size: 2px;
+}
+header .galeria-header .navbar .container-fluid .navbar-collapse {
+  background-color: #ffd7e1;
+}
+header .galeria-header .navbar .container-fluid .navbar-collapse .nav-item a {
+  color: #8a4358;
+  text-align: left;
+  font-size: 15px;
+  transition: font-size 0.5s;
+}
+header .galeria-header .navbar .container-fluid .navbar-collapse .nav-item a:hover {
+  font-size: 16px;
+  color: #ff8ba7;
+}
+header .galeria-header .navbar .container-fluid .redes {
   display: none;
 }
 
@@ -272,8 +337,9 @@ main #descripcion {
   padding: 10px;
 }
 .ustedes .ustedes_foto img {
+  width: 90%;
   border-radius: 10px 100px/120px;
-  aspect-ratio: 1/1;
+  aspect-ratio: 3/4;
 }
 
 /* contacto.html */
@@ -282,28 +348,33 @@ main #descripcion {
   margin: 0;
   padding: 0;
 }
-.contacto form {
+.contacto .formulario__contacto {
+  width: 90%;
+  height: 80%;
+}
+.contacto .formulario__contacto form {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 70vh;
+  height: 65vh;
   padding: 30px;
 }
-.contacto form label {
+.contacto .formulario__contacto form label {
   background-color: #fffffe;
 }
-.contacto form #mensaje {
+.contacto .formulario__contacto form #mensaje {
   width: 100%;
+  height: 50vh;
 }
-.contacto form input {
+.contacto .formulario__contacto form input {
   background-color: #f7c8d3;
 }
-.contacto form #boton_enviar {
+.contacto .formulario__contacto form #boton_enviar {
   height: 6vh;
   width: 12em;
 }
-.contacto form #boton_enviar:hover {
+.contacto .formulario__contacto form #boton_enviar:hover {
   background-color: #ff8ba7;
   cursor: pointer;
 }
@@ -473,6 +544,10 @@ footer #seguinosredes a img {
   }
   /* nosotros */
   #quienes_somos {
+    grid-template-columns: 1fr 1fr;
+  }
+  /* ustedes */
+  .ustedes {
     grid-template-columns: 1fr 1fr;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -201,8 +201,9 @@ main{
     padding:10px;
     .ustedes_{
         &foto img{
+            width:90%;
             border-radius: 10px 100px / 120px;
-            aspect-ratio: 1/1;
+            aspect-ratio: 3/4;
         }
     }
 }
@@ -213,29 +214,35 @@ main{
     height:70vh;
     margin:0;
     padding:0;
-    form{
-        display:flex;
-        flex-direction: column;
-        justify-content:space-around;
-        align-items: center;
-        height:70vh;
-        padding: 30px;
-        label{
-            background-color: map-get(c.$color-fondo,"titulos");
-        }
-        #mensaje{
-            width:100%;
-        }
-        input{
-            background-color:#f7c8d3;
-        }
-        #boton_enviar{
-            height:6vh;
-            width:12em;
-            &:hover{
-                background-color: c.$hover-nav;
-                cursor: pointer;
+    .formulario__contacto{
+        width: 90%;
+        height: 80%;
+        form{
+            display:flex;
+            flex-direction: column;
+            justify-content:space-around;
+            align-items: center;
+            height:65vh;
+            padding: 30px;
+            label{
+                background-color: map-get(c.$color-fondo,"titulos");
+            }
+            #mensaje{
+                width:100%;
+                height: 50vh;
+            }
+            input{
+                background-color:#f7c8d3;
+            }
+            #boton_enviar{
+                height:6vh;
+                width:12em;
+                &:hover{
+                    background-color: c.$hover-nav;
+                    cursor: pointer;
+                }
             }
         }
     }
+    
 }
